@@ -1,51 +1,47 @@
-<!--
-**danribes/danribes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Astro Starter Kit: Minimal
 
-Here are some ideas to get you started:
+```sh
+npm create astro@latest -- --template minimal
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<h1 align="center">Hi there 👋, I'm Daniel Ribes</h1>
-<h3 align="center">Senior Health Economist, Engineer and Blockchain Developer</h3>
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-### Experience/Education 
-* MSc in Health Economics at City, University of London
-  * Specialized in Path Planning, Machine Perception and Deep Learning
-* Multidisciplinary Project involved in programming a barn cleaning robot
-  * Implemented Full Coverage Path Planning
-  * Navigation Stack
-  * 2D SLAM 
-* BSc in Mechanical Engineering at Technical University of Eindhoven
-* Software Developer at Mercurians Delft
-  * Implementing local obstacle avoidance
-  * Skills/Behaviours in robots (e.g. passing or goalkeeping)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-### Experience/Education 
+## 🚀 Project Structure
 
-### Contnent Creator
-I also like to create content about robotics:
-* **Website 🌐**: [Personal Website](https://gribes02.github.io/)
-* **YouTube 📹**: [ROS Explained](https://youtube.com/@rosexplained?si=XZ7Td6RD472UWPWn)
-* **Blog Posts 📄**: [Medium](https://medium.com/@gribes03)
+Inside of your Astro project, you'll see the following folders and files:
 
-### Interests and hobbies
-- Robotics/ROS2
-- Gym 🏋️
-- Tennis 🎾
-- Meeting new people 
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/guillem-ribes-espurz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gribes" height="30" width="40" /></a>
-<a href="https://medium.com/@gribes03" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@gribes03" height="30" width="40" /></a>
-</p>
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gribes02&show_icons=true&locale=en" alt="gribes02" /></p>
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
