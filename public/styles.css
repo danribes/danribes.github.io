@@ -29,8 +29,9 @@ nav ul li a {
 
 .profile-section {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .profile-text {
@@ -41,6 +42,8 @@ nav ul li a {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
 .social-links {
