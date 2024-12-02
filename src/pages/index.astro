@@ -1,27 +1,85 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+// src/pages/index.astro
 ---
 
-<BaseLayout>
-  <section class="profile-section">
-    <div class="profile-text">
-      <h1>Daniel Josep Ribes-Arbonés</h1>
-      <p>A health economist with a passion for data analysis, full-stack development, and web3 technologies.</p>
-      <p>Highly skilled in health economics, econometric modeling, survival analysis, and now exploring blockchain and web technologies.</p>
-    </div>
-    <div class="profile-image">
-      <img src="/profile.jpg" alt="Profile Photo of Daniel Josep Ribes-Arbonés" />
-    </div>
-  </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Ribes - Senior Health Economist</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Daniel Ribes</h1>
+            <p class="text-xl">Senior Health Economist</p>
+        </div>
+    </header>
 
-  <section class="location">
-    <p>Olivella, Spain</p>
-  </section>
+    <main class="container mx-auto mt-8">
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="mb-4">
+                Health Economist with 10 years of experience managing and coordinating value evidence teams and building budget impact, dynamic and static cost-effectiveness models, HTA submissions and market access and pricing models for different countries.
+            </p>
+            <ul class="list-disc pl-5">
+                <li>Engineering background with robust mathematical, econometrics and statistical knowledge.</li>
+                <li>Proven experience in survival analysis and evidence synthesis for oncologic CE models and CE dynamic transmission models for vaccines.</li>
+                <li>Expertise in programming Excel, VBA, R, Python, Julia and WinBUGS.</li>
+                <li>Experience in a broad range of disease areas: oncology, rare diseases, infectious diseases, psychiatric disorders, rheumatology, gastroenterology, cardiac devices and neurology.</li>
+            </ul>
+        </section>
 
-  <section class="social-links">
-    <a href="mailto:danribes@iies.es" class="social-icon">Email</a>
-    <a href="https://github.com/danribes" class="social-icon">GitHub</a>
-    <a href="https://www.linkedin.com/in/danielribes/" class="social-icon">LinkedIn</a>
-  </section>
-</BaseLayout>
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold">Modeler Head at Arexvy-RSV Value Evidence Team</h3>
+                <p class="text-gray-600">July 2021 – October 2024 | Freelance, Barcelona, Spain (Remote)</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Responsible for building epidemiologic and pharmacoeconomic models for Arexvy, the GSK vaccine against Respiratory Syncytial Virus (RSV) for older adults.</li>
+                    <li>Developed Cost-Effectiveness Dynamic Transmission Model in Excel, VBA, R and C++.</li>
+                    <li>Created Static Cost Effectiveness Model and Budget Impact Model for different countries.</li>
+                </ul>
+            </div>
+            <!-- Add more work experience entries here -->
+        </section>
 
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <ul class="list-disc pl-5">
+                <li>Master in Blockchain Development: Fullstack, DevOps, Solidity and Hyperledger (July 2023 – July 2024)</li>
+                <li>MSc in Health Economics, City University of London, UK (Sept. 2014 – Sept. 2015)</li>
+                <li>Business Studies at IESE (Universidad de Navarra) Barcelona (Nov. 2005 – July 2006)</li>
+                <li>MSc Degree in Agricultural Engineering, Universitat de Lleida (Spain) and Wageningen Agricultural University (The Netherlands) (Sept 1986 – May 1993)</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <ul class="list-disc pl-5">
+                <li>Cost-effectiveness modeling</li>
+                <li>Budget impact analysis</li>
+                <li>Health Technology Assessment (HTA)</li>
+                <li>Statistical analysis</li>
+                <li>Programming (Excel, VBA, R, Python, Julia, WinBUGS)</li>
+                <li>Evidence synthesis</li>
+                <li>Market access and pricing strategies</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p>Email: danribes@iies.es</p>
+            <p>Phone: +34 696 62 83 77</p>
+            <p>Location: Barcelona, Spain</p>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Daniel Ribes. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
