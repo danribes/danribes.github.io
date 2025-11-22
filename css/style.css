@@ -269,10 +269,7 @@ ul {
 .nav-brand a {
     font-size: 1.5rem;
     font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: white;
     font-family: var(--font-heading);
     transition: all var(--transition-normal);
 }
@@ -288,7 +285,7 @@ ul {
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.85);
     font-weight: 500;
     transition: all var(--transition-fast);
     position: relative;
@@ -296,7 +293,7 @@ ul {
 }
 
 .nav-link:hover {
-    color: var(--primary-light);
+    color: #ffffff;
     /* Removed transform for steady appearance */
 }
 
