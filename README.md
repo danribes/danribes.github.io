@@ -283,7 +283,7 @@ Spanish (Native), Catalan (Native), English (Fluent), French (Advanced), Italian
 - Phone: +34 696 62 83 77
 - Location: Barcelona, Spain (Remote-Ready)
 - LinkedIn: [daniel-ribes](https://www.linkedin.com/in/daniel-ribes/)
-- Resume: [Download CV](https://drive.google.com/file/d/1pgg3SQ1IgJ6eISY6DCS5nzUAj0dEw4H2/view?usp=sharing)
+- Resume: [Download CV](https://drive.google.com/file/d/1_syLG7xnnlKG63AipAUNYFiR4CaOWueQ/view?usp=drive_link)
 
 ## 🎨 Design Principles
 
@@ -362,7 +362,7 @@ Senior Health Economist
 - 📧 Email: danribes@iies.es
 - 📱 Phone: +34 696 62 83 77
 - 💼 LinkedIn: [daniel-ribes](https://www.linkedin.com/in/daniel-ribes/)
-- 📄 Resume: [Download CV](https://drive.google.com/file/d/1pgg3SQ1IgJ6eISY6DCS5nzUAj0dEw4H2/view?usp=sharing)
+- 📄 Resume: [Download CV](https://drive.google.com/file/d/1_syLG7xnnlKG63AipAUNYFiR4CaOWueQ/view?usp=drive_link)
 
 ---
 
