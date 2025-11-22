@@ -338,6 +338,18 @@ ul {
     color: white;
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+}
+
+.btn-outline:hover {
+    background: var(--bg-secondary);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 .btn-large {
     padding: 1.125rem 2.5rem;
     font-size: 1.125rem;
