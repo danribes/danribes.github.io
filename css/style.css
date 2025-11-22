@@ -90,7 +90,7 @@ body {
     position: relative;
 }
 
-/* Scientific Background Pattern - NO ANIMATION */
+/* Scientific & AI Coding Background Pattern - NO ANIMATION */
 body::before {
     content: '';
     position: fixed;
@@ -99,19 +99,19 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: 
-        /* Mathematical formulas */
-        url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='20' y='40' font-family='monospace' font-size='16' fill='%23667eea' opacity='0.15'%3EΣ P(x) = 1%3C/text%3E%3Ctext x='20' y='80' font-family='monospace' font-size='14' fill='%234facfe' opacity='0.12'%3Eλ(t) = λ₀e^βt%3C/text%3E%3Ctext x='20' y='120' font-family='monospace' font-size='14' fill='%2343e97b' opacity='0.1'%3EICER = ΔC/ΔE%3C/text%3E%3Ctext x='20' y='160' font-family='monospace' font-size='12' fill='%23667eea' opacity='0.08'%3EQALY = Σ(u·t)%3C/text%3E%3C/svg%3E"),
+        /* AI & Programming Code */
+        url("data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='10' y='25' font-family='Courier New, monospace' font-size='11' fill='%23667eea' opacity='0.12'%3Edef model(X): return β₀ + Σβᵢxᵢ%3C/text%3E%3Ctext x='10' y='50' font-family='Courier New, monospace' font-size='10' fill='%234facfe' opacity='0.10'%3Eif (ICER %26lt; threshold):%3C/text%3E%3Ctext x='10' y='70' font-family='Courier New, monospace' font-size='10' fill='%2343e97b' opacity='0.09'%3E  π(θ|x) ∝ L(x|θ)·π(θ)%3C/text%3E%3Ctext x='10' y='95' font-family='monospace' font-size='12' fill='%23667eea' opacity='0.11'%3EΣ P(x) = 1%3C/text%3E%3Ctext x='10' y='120' font-family='monospace' font-size='11' fill='%234facfe' opacity='0.10'%3Eλ(t) = λ₀e^(βt)%3C/text%3E%3Ctext x='10' y='145' font-family='monospace' font-size='11' fill='%2343e97b' opacity='0.09'%3EICER = ΔC/ΔE%3C/text%3E%3Ctext x='10' y='170' font-family='Courier New, monospace' font-size='10' fill='%23667eea' opacity='0.08'%3Efor state in markov_chain:%3C/text%3E%3Ctext x='10' y='190' font-family='Courier New, monospace' font-size='9' fill='%234facfe' opacity='0.08'%3E  P[i][j] = transition_prob%3C/text%3E%3Ctext x='10' y='210' font-family='monospace' font-size='10' fill='%2343e97b' opacity='0.07'%3EQALY = Σ(uᵢ·tᵢ)%3C/text%3E%3Ctext x='10' y='235' font-family='Courier New, monospace' font-size='9' fill='%23667eea' opacity='0.08'%3Ewhile convergence:%3C/text%3E%3Ctext x='10' y='255' font-family='Courier New, monospace' font-size='9' fill='%234facfe' opacity='0.07'%3E  update_parameters(θ)%3C/text%3E%3Ctext x='10' y='280' font-family='monospace' font-size='10' fill='%2343e97b' opacity='0.07'%3EE[X] = ∫x·f(x)dx%3C/text%3E%3C/svg%3E"),
         /* Grid pattern */
         linear-gradient(rgba(102, 126, 234, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(102, 126, 234, 0.03) 1px, transparent 1px);
-    background-size: 400px 400px, 40px 40px, 40px 40px;
+    background-size: 600px 600px, 40px 40px, 40px 40px;
     background-position: 0 0, 0 0, 0 0;
     z-index: -1;
     pointer-events: none;
     /* NO ANIMATION - steady background */
 }
 
-/* Statistical visualization overlay */
+/* Statistical & AI visualization overlay */
 body::after {
     content: '';
     position: fixed;
@@ -119,8 +119,8 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.04'%3E%3C!-- Survival curve --%3E%3Cpath d='M50,400 L100,380 L150,350 L200,310 L250,260 L300,200 L350,140 L400,90 L450,60 L500,45 L550,35 L600,30' stroke='%234facfe' stroke-width='2' fill='none'/%3E%3C!-- Markov states --%3E%3Ccircle cx='100' cy='100' r='30' stroke='%23667eea' stroke-width='2' fill='none'/%3E%3Ccircle cx='250' cy='100' r='30' stroke='%2343e97b' stroke-width='2' fill='none'/%3E%3Ccircle cx='400' cy='100' r='30' stroke='%23667eea' stroke-width='2' fill='none'/%3E%3C!-- Arrows --%3E%3Cline x1='130' y1='100' x2='220' y2='100' stroke='%234facfe' stroke-width='1.5'/%3E%3Cline x1='280' y1='100' x2='370' y2='100' stroke='%234facfe' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 800px 600px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1000' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.05'%3E%3C!-- Survival curve --%3E%3Cpath d='M50,500 L100,480 L150,450 L200,410 L250,360 L300,300 L350,240 L400,190 L450,160 L500,145 L550,135 L600,130' stroke='%234facfe' stroke-width='2' fill='none'/%3E%3C!-- Markov states --%3E%3Ccircle cx='100' cy='100' r='35' stroke='%23667eea' stroke-width='2' fill='none'/%3E%3Ctext x='85' y='108' font-size='12' fill='%23667eea' opacity='0.6'%3ES1%3C/text%3E%3Ccircle cx='280' cy='100' r='35' stroke='%2343e97b' stroke-width='2' fill='none'/%3E%3Ctext x='265' y='108' font-size='12' fill='%2343e97b' opacity='0.6'%3ES2%3C/text%3E%3Ccircle cx='460' cy='100' r='35' stroke='%23667eea' stroke-width='2' fill='none'/%3E%3Ctext x='445' y='108' font-size='12' fill='%23667eea' opacity='0.6'%3ES3%3C/text%3E%3C!-- Transition arrows --%3E%3Cpath d='M135,100 L245,100' stroke='%234facfe' stroke-width='2' marker-end='url(%23arrowblue)'/%3E%3Cpath d='M315,100 L425,100' stroke='%234facfe' stroke-width='2' marker-end='url(%23arrowblue)'/%3E%3C!-- Self-loops --%3E%3Cpath d='M100,65 Q100,40 120,50' stroke='%2343e97b' stroke-width='1.5' fill='none'/%3E%3C!-- Neural network nodes --%3E%3Ccircle cx='700' cy='200' r='15' fill='%23667eea' opacity='0.3'/%3E%3Ccircle cx='700' cy='250' r='15' fill='%23667eea' opacity='0.3'/%3E%3Ccircle cx='700' cy='300' r='15' fill='%23667eea' opacity='0.3'/%3E%3Ccircle cx='800' cy='225' r='15' fill='%234facfe' opacity='0.3'/%3E%3Ccircle cx='800' cy='275' r='15' fill='%234facfe' opacity='0.3'/%3E%3Ccircle cx='900' cy='250' r='15' fill='%2343e97b' opacity='0.3'/%3E%3C!-- Network connections --%3E%3Cline x1='715' y1='200' x2='785' y2='225' stroke='%23667eea' stroke-width='1' opacity='0.3'/%3E%3Cline x1='715' y1='250' x2='785' y2='225' stroke='%23667eea' stroke-width='1' opacity='0.3'/%3E%3Cline x1='815' y1='225' x2='885' y2='250' stroke='%234facfe' stroke-width='1' opacity='0.3'/%3E%3C!-- Cost-effectiveness plane quadrants --%3E%3Cline x1='50' y1='650' x2='550' y2='650' stroke='%23667eea' stroke-width='1.5' opacity='0.4'/%3E%3Cline x1='300' y1='500' x2='300' y2='750' stroke='%23667eea' stroke-width='1.5' opacity='0.4'/%3E%3Ctext x='520' y='645' font-size='10' fill='%23667eea' opacity='0.5'%3EΔE%3C/text%3E%3Ctext x='305' y='515' font-size='10' fill='%23667eea' opacity='0.5'%3EΔC%3C/text%3E%3C!-- Data points --%3E%3Ccircle cx='350' cy='620' r='4' fill='%2343e97b' opacity='0.6'/%3E%3Ccircle cx='380' cy='600' r='4' fill='%2343e97b' opacity='0.6'/%3E%3Ccircle cx='420' cy='590' r='4' fill='%2343e97b' opacity='0.6'/%3E%3Ccircle cx='400' cy='610' r='4' fill='%2343e97b' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 1000px 800px;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
@@ -366,9 +366,9 @@ ul {
     right: 0;
     bottom: 0;
     background-image: 
-        /* Cost-effectiveness plane */
-        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3C!-- Axes --%3E%3Cline x1='50' y1='350' x2='550' y2='350' stroke='%23667eea' stroke-width='2'/%3E%3Cline x1='50' y1='350' x2='50' y2='50' stroke='%23667eea' stroke-width='2'/%3E%3Ctext x='520' y='370' fill='%23667eea' font-size='14'%3EΔE%3C/text%3E%3Ctext x='20' y='70' fill='%23667eea' font-size='14'%3EΔC%3C/text%3E%3C!-- Threshold line --%3E%3Cline x1='50' y1='350' x2='500' y2='100' stroke='%234facfe' stroke-width='1.5' stroke-dasharray='5,5'/%3E%3C!-- Data points --%3E%3Ccircle cx='200' cy='250' r='4' fill='%2343e97b'/%3E%3Ccircle cx='300' cy='200' r='4' fill='%2343e97b'/%3E%3Ccircle cx='400' cy='180' r='4' fill='%2343e97b'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 600px 400px;
+        /* AI/ML Code snippets & Statistical formulas */
+        url("data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.08'%3E%3C!-- Programming code --%3E%3Ctext x='450' y='80' font-family='Courier New, monospace' font-size='12' fill='%23667eea'%3Eclass HealthEconomics:%3C/text%3E%3Ctext x='470' y='100' font-family='Courier New, monospace' font-size='11' fill='%234facfe'%3Edef calculate_icer(self):%3C/text%3E%3Ctext x='490' y='120' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3Ereturn (ΔC/ΔE)%3C/text%3E%3Ctext x='450' y='150' font-family='Courier New, monospace' font-size='11' fill='%23667eea'%3Efor state in markov:%3C/text%3E%3Ctext x='470' y='170' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3Etransition_prob[i][j]%3C/text%3E%3C!-- Cost-effectiveness plane --%3E%3Cline x1='50' y1='500' x2='550' y2='500' stroke='%23667eea' stroke-width='2'/%3E%3Cline x1='50' y1='500' x2='50' y2='200' stroke='%23667eea' stroke-width='2'/%3E%3Ctext x='520' y='520' fill='%23667eea' font-size='14'%3EΔE%3C/text%3E%3Ctext x='20' y='220' fill='%23667eea' font-size='14'%3EΔC%3C/text%3E%3C!-- Threshold line --%3E%3Cline x1='50' y1='500' x2='500' y2='250' stroke='%234facfe' stroke-width='1.5' stroke-dasharray='5,5'/%3E%3Ctext x='300' y='370' fill='%234facfe' font-size='11'%3Eλ = £30k/QALY%3C/text%3E%3C!-- Data points --%3E%3Ccircle cx='200' cy='400' r='4' fill='%2343e97b'/%3E%3Ccircle cx='300' cy='350' r='4' fill='%2343e97b'/%3E%3Ccircle cx='400' cy='330' r='4' fill='%2343e97b'/%3E%3Ccircle cx='350' cy='360' r='4' fill='%2343e97b'/%3E%3C!-- Statistical formulas --%3E%3Ctext x='450' y='400' font-family='monospace' font-size='12' fill='%23667eea'%3EP(x) = e^(β₀+β₁x)%3C/text%3E%3Ctext x='450' y='430' font-family='monospace' font-size='11' fill='%234facfe'%3EQALY = Σ(uᵢ·tᵢ)%3C/text%3E%3Ctext x='450' y='460' font-family='monospace' font-size='11' fill='%2343e97b'%3ES(t) = e^(-λt)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 800px 600px;
     background-position: right center;
     background-repeat: no-repeat;
 }
@@ -636,10 +636,16 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23f8fafc' opacity='0.5'/%3E%3C/svg%3E") no-repeat;
-    background-size: cover;
-    transform: translateY(-50px);
+    bottom: 0;
+    background-image: 
+        /* AI and Statistical code patterns */
+        url("data:image/svg+xml,%3Csvg width='500' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='50' font-family='Courier New, monospace' font-size='11' fill='%23667eea'%3Eimport numpy as np%3C/text%3E%3Ctext x='30' y='75' font-family='Courier New, monospace' font-size='11' fill='%234facfe'%3Efrom scipy.stats import norm%3C/text%3E%3Ctext x='30' y='110' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3Edef markov_model(states):%3C/text%3E%3Ctext x='50' y='135' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3EP_matrix = transition_prob%3C/text%3E%3Ctext x='50' y='160' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3Efor t in range(cycles):%3C/text%3E%3Ctext x='70' y='185' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Eresults.append(state)%3C/text%3E%3Ctext x='30' y='220' font-family='monospace' font-size='11' fill='%23667eea'%3EICER = (C_new - C_old) /%3C/text%3E%3Ctext x='60' y='245' font-family='monospace' font-size='11' fill='%234facfe'%3E(E_new - E_old)%3C/text%3E%3Ctext x='30' y='280' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3Eif ICER %26lt; threshold:%3C/text%3E%3Ctext x='50' y='305' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3Edecision = 'Cost-effective'%3C/text%3E%3Ctext x='300' y='60' font-family='monospace' font-size='12' fill='%23667eea'%3Eπ(θ|x) ∝ L(x|θ)·π(θ)%3C/text%3E%3Ctext x='300' y='90' font-family='monospace' font-size='11' fill='%234facfe'%3ES(t) = exp(-Σλᵢtᵢ)%3C/text%3E%3Ctext x='300' y='120' font-family='monospace' font-size='11' fill='%2343e97b'%3Eh(t) = λ₀·exp(β·t)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 800px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .about-content {
@@ -667,7 +673,7 @@ ul {
     overflow: hidden;
 }
 
-/* Background Pattern with Health Economics Elements */
+/* Background Pattern with AI, Health Economics & Coding Elements */
 .profile-background-pattern {
     position: absolute;
     top: 0;
@@ -676,12 +682,12 @@ ul {
     bottom: 0;
     opacity: 0.08;
     background-image: 
-        /* Mathematical formulas pattern */
-        url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='10' y='30' font-family='monospace' font-size='14' fill='%23ffffff'%3EΣ P(x)%3C/text%3E%3Ctext x='10' y='60' font-family='monospace' font-size='12' fill='%23ffffff'%3Eλ = 0.05%3C/text%3E%3Ctext x='10' y='80' font-family='monospace' font-size='12' fill='%23ffffff'%3EICER%3C/text%3E%3C/svg%3E"),
+        /* AI & Programming code with mathematical formulas */
+        url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='10' y='25' font-family='Courier New, monospace' font-size='10' fill='%23ffffff'%3Edef icer(C, E):%3C/text%3E%3Ctext x='15' y='45' font-family='Courier New, monospace' font-size='9' fill='%23ffffff'%3Ereturn ΔC/ΔE%3C/text%3E%3Ctext x='10' y='70' font-family='monospace' font-size='11' fill='%23ffffff'%3EΣ P(x) = 1%3C/text%3E%3Ctext x='10' y='95' font-family='Courier New, monospace' font-size='9' fill='%23ffffff'%3Efor s in states:%3C/text%3E%3Ctext x='15' y='115' font-family='Courier New, monospace' font-size='8' fill='%23ffffff'%3Etransition[i][j]%3C/text%3E%3Ctext x='10' y='140' font-family='monospace' font-size='10' fill='%23ffffff'%3Eλ(t)=λ₀e^βt%3C/text%3E%3Ctext x='10' y='165' font-family='monospace' font-size='10' fill='%23ffffff'%3EQALY=Σ(u·t)%3C/text%3E%3Ctext x='10' y='185' font-family='Courier New, monospace' font-size='8' fill='%23ffffff'%3Eif p %26lt; 0.05:%3C/text%3E%3C/svg%3E"),
         /* Grid pattern */
         linear-gradient(rgba(102, 126, 234, 0.1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(102, 126, 234, 0.1) 1px, transparent 1px);
-    background-size: 200px 200px, 40px 40px, 40px 40px;
+    background-size: 300px 300px, 40px 40px, 40px 40px;
     background-position: 0 0, 0 0, 0 0;
     pointer-events: none;
 }
@@ -916,6 +922,24 @@ ul {
     position: relative;
 }
 
+.expertise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* R and Python statistical code */
+        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='11' fill='%23667eea'%3E%23 R Statistical Analysis%3C/text%3E%3Ctext x='30' y='65' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3Esurvival_model %26lt;- survfit(%3C/text%3E%3Ctext x='50' y='85' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3ESurv(time, status) ~ arm)%3C/text%3E%3Ctext x='30' y='115' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3Eggplot(aes(x=QALY, y=Cost))%3C/text%3E%3Ctext x='350' y='50' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3E// C++ Performance%3C/text%3E%3Ctext x='350' y='75' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Evector%26lt;double%26gt; results%3C/text%3E%3Ctext x='350' y='100' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3Efor(int i=0; i%26lt;n; i++)%3C/text%3E%3Ctext x='30' y='160' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3Eimport pandas as pd%3C/text%3E%3Ctext x='30' y='185' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3Edf.groupby('treatment')%3C/text%3E%3Ctext x='30' y='210' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3E.agg(mean_icer)%3C/text%3E%3Ctext x='350' y='150' font-family='monospace' font-size='11' fill='%234facfe'%3ES(t) = exp(-∫λ(u)du)%3C/text%3E%3Ctext x='350' y='180' font-family='monospace' font-size='10' fill='%2343e97b'%3Eh(t|x) = h₀(t)exp(βx)%3C/text%3E%3Ctext x='30' y='250' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Emodel.fit(X_train, y)%3C/text%3E%3Ctext x='30' y='275' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Epred = model.predict(X)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 900px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1052,16 +1076,7 @@ ul {
     position: relative;
 }
 
-.services::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-    transform: skewY(-2deg);
-}
+/* Removed horizontal bar with slope for clean professional look */
 
 .services-grid {
     display: grid;
@@ -1181,7 +1196,7 @@ ul {
 
 .therapeutic-areas {
     padding: var(--spacing-lg) 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #1a1d29 0%, #252a3a 100%);
     position: relative;
     overflow: hidden;
 }
@@ -1193,23 +1208,31 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: 
+        /* Medical AI and disease modeling code */
+        url("data:image/svg+xml,%3Csvg width='500' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='20' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3E// Disease Progression Model%3C/text%3E%3Ctext x='20' y='65' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Eclass OncologyModel:%3C/text%3E%3Ctext x='40' y='85' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Edef simulate(states):%3C/text%3E%3Ctext x='60' y='105' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Efor cycle in range(n):%3C/text%3E%3Ctext x='280' y='50' font-family='monospace' font-size='10' fill='%234facfe'%3EP(progression) = 1-e^-λt%3C/text%3E%3Ctext x='280' y='75' font-family='monospace' font-size='9' fill='%2343e97b'%3EQALY_adj = Σ(uᵢ·tᵢ·δᵢ)%3C/text%3E%3Ctext x='20' y='145' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Eif therapy_effective:%3C/text%3E%3Ctext x='40' y='165' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Esurvival_gain += benefit%3C/text%3E%3Ctext x='280' y='120' font-family='monospace' font-size='9' fill='%23667eea'%3EOS = median_surv + HR·x%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 800px 500px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .therapeutic-areas .section-title,
 .therapeutic-areas .section-subtitle {
-    color: white;
+    color: var(--text-primary);
 }
 
 .therapeutic-areas .section-title {
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .therapeutic-areas .section-title::after {
-    background: white;
+    background: var(--gradient-primary);
 }
 
 .therapeutic-grid {
@@ -1221,20 +1244,23 @@ ul {
 }
 
 .therapeutic-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: var(--radius-lg);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: all var(--transition-normal);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .therapeutic-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-    background: white;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.95) 0%, rgba(37, 42, 58, 0.95) 100%);
+    border-color: rgba(102, 126, 234, 0.5);
 }
 
 .therapeutic-card h4 {
@@ -1258,7 +1284,26 @@ ul {
 
 .portfolio {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1d29 100%);
+    position: relative;
+}
+
+.portfolio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* VBA, Excel, Julia code patterns */
+        url("data:image/svg+xml,%3Csvg width='700' height='500' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='11' fill='%23667eea'%3E' VBA Excel Automation%3C/text%3E%3Ctext x='30' y='65' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3ESub CalculateICER()%3C/text%3E%3Ctext x='50' y='85' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3EDim deltaC, deltaE%3C/text%3E%3Ctext x='50' y='105' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3EICER = deltaC / deltaE%3C/text%3E%3Ctext x='30' y='130' font-family='Courier New, monospace' font-size='10' fill='%234facfe'%3EEnd Sub%3C/text%3E%3Ctext x='400' y='50' font-family='Courier New, monospace' font-size='10' fill='%2343e97b'%3E%23 Julia High Performance%3C/text%3E%3Ctext x='400' y='75' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3Efunction markov_sim(P)%3C/text%3E%3Ctext x='420' y='95' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Eresults = zeros(n)%3C/text%3E%3Ctext x='420' y='115' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Efor i in 1:cycles%3C/text%3E%3Ctext x='440' y='135' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Estate = transition(P)%3C/text%3E%3Ctext x='30' y='180' font-family='monospace' font-size='11' fill='%234facfe'%3EWTP = £30,000/QALY%3C/text%3E%3Ctext x='30' y='205' font-family='monospace' font-size='10' fill='%2343e97b'%3EINMB = WTP·ΔE - ΔC%3C/text%3E%3Ctext x='400' y='180' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3Elibrary(flexsurv)%3C/text%3E%3Ctext x='400' y='205' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Efit %26lt;- flexsurvreg(%3C/text%3E%3Ctext x='420' y='225' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3ESurv(time) ~ 1)%3C/text%3E%3Ctext x='30' y='260' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3E=IF(B2%26lt;threshold,%3C/text%3E%3Ctext x='50' y='280' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3E\"Cost-effective\",\"Not\")%3C/text%3E%3Ctext x='400' y='270' font-family='monospace' font-size='10' fill='%2343e97b'%3Eπ(θ) = Beta(α, β)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 1000px 700px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .portfolio-grid {
@@ -1267,7 +1312,8 @@ ul {
 }
 
 .portfolio-card {
-    background: white;
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
+    backdrop-filter: blur(10px);
     padding: 3rem;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
@@ -1275,6 +1321,8 @@ ul {
     border-top: 4px solid transparent;
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    z-index: 1;
 }
 
 .portfolio-card::before {
@@ -1298,9 +1346,9 @@ ul {
 }
 
 .portfolio-card.featured {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
     border-top-color: var(--secondary-color);
-    border: 2px solid rgba(102, 126, 234, 0.2);
+    border: 2px solid rgba(102, 126, 234, 0.4);
 }
 
 .portfolio-header {
@@ -1409,7 +1457,26 @@ ul {
 
 .publications {
     padding: var(--spacing-xl) 0;
-    background: white;
+    background: linear-gradient(135deg, #0f1419 0%, #1a1d29 100%);
+    position: relative;
+}
+
+.publications::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* Academic research code and statistical formulas */
+        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3E%23 Statistical Analysis%3C/text%3E%3Ctext x='30' y='65' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Elibrary(survival)%3C/text%3E%3Ctext x='30' y='90' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Emodel %26lt;- coxph(Surv~x)%3C/text%3E%3Ctext x='350' y='50' font-family='monospace' font-size='10' fill='%23667eea'%3EP(Y=1|X) = 1/(1+e^-z)%3C/text%3E%3Ctext x='350' y='80' font-family='monospace' font-size='9' fill='%234facfe'%3Eχ² = Σ(O-E)²/E%3C/text%3E%3Ctext x='30' y='130' font-family='Courier New, monospace' font-size='9' fill='%23667eea'%3Esummary(fit)%24coefficients%3C/text%3E%3Ctext x='30' y='155' font-family='Courier New, monospace' font-size='8' fill='%234facfe'%3Econfint(model, level=0.95)%3C/text%3E%3Ctext x='350' y='125' font-family='monospace' font-size='9' fill='%2343e97b'%3Et = (x̄-μ)/(s/√n)%3C/text%3E%3Ctext x='30' y='195' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Eggplot(data, aes(x,y)) +%3C/text%3E%3Ctext x='50' y='215' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Egeom_point() +%3C/text%3E%3Ctext x='50' y='235' font-family='Courier New, monospace' font-size='8' fill='%234facfe'%3Estat_smooth(method='lm')%3C/text%3E%3Ctext x='350' y='170' font-family='monospace' font-size='9' fill='%23667eea'%3EHR = exp(β)%3C/text%3E%3Ctext x='350' y='200' font-family='monospace' font-size='9' fill='%234facfe'%3E95%25 CI: [e^(β-1.96·SE), ...]%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 900px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .publications-grid {
@@ -1419,14 +1486,16 @@ ul {
 }
 
 .publication-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
+    backdrop-filter: blur(10px);
     padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    z-index: 1;
 }
 
 .publication-card::before {
@@ -1501,7 +1570,26 @@ ul {
 
 .experience {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+    background: linear-gradient(135deg, #1a1d29 0%, #252a3a 100%);
+    position: relative;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* Career progression and project management code */
+        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3Eclass ProjectManager:%3C/text%3E%3Ctext x='50' y='65' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Edef timeline(years):%3C/text%3E%3Ctext x='70' y='85' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Efor role in career:%3C/text%3E%3Ctext x='90' y='105' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Eachievements.add()%3C/text%3E%3Ctext x='350' y='50' font-family='monospace' font-size='10' fill='%234facfe'%3Eexp(years) = Σ skills%3C/text%3E%3Ctext x='350' y='80' font-family='monospace' font-size='9' fill='%2343e97b'%3Eimpact = quality × time%3C/text%3E%3Ctext x='30' y='145' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3E// Version Control%3C/text%3E%3Ctext x='30' y='165' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Egit commit -m 'milestone'%3C/text%3E%3Ctext x='350' y='130' font-family='monospace' font-size='9' fill='%23667eea'%3Egrowth_rate = dS/dt%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 900px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .timeline {
@@ -1543,14 +1631,16 @@ ul {
 }
 
 .timeline-content {
-    background: white;
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     flex: 1;
     position: relative;
     transition: all var(--transition-normal);
-    border: 1px solid rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    z-index: 1;
 }
 
 .timeline-content::before {
@@ -1560,12 +1650,10 @@ ul {
     top: 25px;
     width: 24px;
     height: 24px;
-    background: white;
-    border: 4px solid;
-    border-image: var(--gradient-primary) 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 4px solid rgba(102, 126, 234, 0.5);
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-    animation: pulse 2s infinite;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
 }
 
 .timeline-content:hover {
@@ -1601,7 +1689,26 @@ ul {
 
 .education {
     padding: var(--spacing-xl) 0;
-    background: white;
+    background: linear-gradient(135deg, #0f1419 0%, #1a1d29 100%);
+    position: relative;
+}
+
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* Academic and learning code */
+        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3Eclass Education:%3C/text%3E%3Ctext x='50' y='65' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Edef learn(subject):%3C/text%3E%3Ctext x='70' y='85' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Eknowledge += study()%3C/text%3E%3Ctext x='70' y='105' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Ereturn mastery%3C/text%3E%3Ctext x='350' y='50' font-family='monospace' font-size='10' fill='%234facfe'%3Eθ ~ N(μ, σ²)%3C/text%3E%3Ctext x='350' y='80' font-family='monospace' font-size='9' fill='%2343e97b'%3E∫f(x)dx = knowledge%3C/text%3E%3Ctext x='30' y='145' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Eimport expertise%3C/text%3E%3Ctext x='30' y='165' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Eskills.append(degree)%3C/text%3E%3Ctext x='350' y='130' font-family='monospace' font-size='9' fill='%23667eea'%3EP(success) = f(effort)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 900px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .education-grid {
@@ -1611,14 +1718,16 @@ ul {
 }
 
 .education-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
-    border: 1px solid transparent;
+    border: 1px solid rgba(102, 126, 234, 0.2);
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .education-card::before {
@@ -1691,8 +1800,27 @@ ul {
 
 .languages {
     padding: var(--spacing-lg) 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #1a1d29 0%, #252a3a 100%);
     text-align: center;
+    position: relative;
+}
+
+.languages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        /* Multilingual programming concepts */
+        url("data:image/svg+xml,%3Csvg width='500' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3Edef translate(lang):%3C/text%3E%3Ctext x='50' y='60' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Ereturn fluency[lang]%3C/text%3E%3Ctext x='300' y='45' font-family='monospace' font-size='10' fill='%2343e97b'%3EL = %7BES, EN, FR, ...%7D%3C/text%3E%3Ctext x='30' y='100' font-family='Courier New, monospace' font-size='9' fill='%2343e97b'%3Elanguages = ['Spanish',%3C/text%3E%3Ctext x='50' y='120' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3E'English', 'French']%3C/text%3E%3Ctext x='300' y='100' font-family='monospace' font-size='9' fill='%23667eea'%3EΣ skills = global_reach%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 800px 500px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .languages-grid {
@@ -1704,14 +1832,16 @@ ul {
 }
 
 .language-item {
-    background: white;
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
+    backdrop-filter: blur(10px);
     padding: 2rem 1.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-normal);
-    border: 2px solid transparent;
+    border: 2px solid rgba(102, 126, 234, 0.2);
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .language-item::before {
@@ -1755,7 +1885,7 @@ ul {
 
 .contact {
     padding: var(--spacing-xl) 0;
-    background: var(--mesh-gradient-1);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1d29 100%);
     position: relative;
     overflow: hidden;
 }
@@ -1767,7 +1897,15 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background-image: 
+        /* Communication and connection code */
+        url("data:image/svg+xml,%3Csvg width='600' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.06'%3E%3Ctext x='30' y='40' font-family='Courier New, monospace' font-size='10' fill='%23667eea'%3Eclass ContactManager:%3C/text%3E%3Ctext x='50' y='65' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Edef connect(message):%3C/text%3E%3Ctext x='70' y='85' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Esend_email(to, msg)%3C/text%3E%3Ctext x='70' y='105' font-family='Courier New, monospace' font-size='8' fill='%23667eea'%3Ereturn response%3C/text%3E%3Ctext x='350' y='50' font-family='monospace' font-size='10' fill='%234facfe'%3Enetwork = Σ connections%3C/text%3E%3Ctext x='350' y='80' font-family='monospace' font-size='9' fill='%2343e97b'%3Ecollaboration = f(reach)%3C/text%3E%3Ctext x='30' y='145' font-family='Courier New, monospace' font-size='9' fill='%234facfe'%3Eif inquiry_received:%3C/text%3E%3Ctext x='50' y='165' font-family='Courier New, monospace' font-size='8' fill='%2343e97b'%3Eprocess_request()%3C/text%3E%3Ctext x='350' y='130' font-family='monospace' font-size='9' fill='%23667eea'%3Evalue = partnership%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 900px 600px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .contact .section-title,
@@ -1792,20 +1930,22 @@ ul {
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
     backdrop-filter: blur(20px);
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     text-align: center;
     transition: all var(--transition-normal);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    z-index: 1;
 }
 
 .contact-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-2xl);
-    background: white;
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.95) 0%, rgba(37, 42, 58, 0.95) 100%);
+    border-color: rgba(102, 126, 234, 0.4);
 }
 
 .contact-icon {
@@ -1841,11 +1981,13 @@ ul {
 }
 
 .contact-cta {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(26, 29, 41, 0.9) 0%, rgba(37, 42, 58, 0.9) 100%);
     backdrop-filter: blur(20px);
     padding: 3rem;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-2xl);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1885,8 +2027,15 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.5;
+    background-image: 
+        /* Footer code signatures */
+        url("data:image/svg+xml,%3Csvg width='400' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.04'%3E%3Ctext x='20' y='40' font-family='Courier New, monospace' font-size='9' fill='%23ffffff'%3E// Built with passion%3C/text%3E%3Ctext x='20' y='65' font-family='Courier New, monospace' font-size='8' fill='%23ffffff'%3Econst expertise = years * dedication%3C/text%3E%3Ctext x='20' y='90' font-family='monospace' font-size='9' fill='%23ffffff'%3E\u00a9 2025 \u00b7 All rights reserved%3C/text%3E%3Ctext x='250' y='50' font-family='monospace' font-size='8' fill='%23ffffff'%3E\u03a3 contributions = impact%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 600px 300px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .footer-content {
