@@ -1,4 +1,36 @@
 // ===================================
+// Floating Shapes Background
+// ===================================
+
+function createFloatingShapes() {
+    const shapesContainer = document.createElement('div');
+    shapesContainer.className = 'floating-shapes';
+    document.body.insertBefore(shapesContainer, document.body.firstChild);
+    
+    const shapes = [
+        { type: 'circle', size: 100, top: '10%', left: '10%', duration: 20 },
+        { type: 'square', size: 80, top: '60%', left: '80%', duration: 25 },
+        { type: 'circle', size: 60, top: '80%', left: '20%', duration: 18 },
+        { type: 'square', size: 120, top: '30%', left: '70%', duration: 22 },
+        { type: 'circle', size: 90, top: '50%', left: '50%', duration: 30 }
+    ];
+    
+    shapes.forEach((shape, index) => {
+        const shapeEl = document.createElement('div');
+        shapeEl.className = `shape ${shape.type}`;
+        shapeEl.style.cssText = `
+            width: ${shape.size}px;
+            height: ${shape.size}px;
+            top: ${shape.top};
+            left: ${shape.left};
+            animation-duration: ${shape.duration}s;
+            animation-delay: ${index * 0.5}s;
+        `;
+        shapesContainer.appendChild(shapeEl);
+    });
+}
+
+// ===================================
 // Mobile Navigation Toggle
 // ===================================
 
@@ -57,7 +89,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===================================
-// Navbar Background on Scroll
+// Enhanced Navbar on Scroll
 // ===================================
 
 const navbar = document.querySelector('.navbar');
@@ -66,19 +98,18 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
+    // Add/remove scrolled class
     if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.05)';
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.classList.remove('scrolled');
     }
     
     lastScroll = currentScroll;
 });
 
 // ===================================
-// Intersection Observer for Animations
+// Intersection Observer for Scroll Animations
 // ===================================
 
 const observerOptions = {
@@ -86,11 +117,13 @@ const observerOptions = {
     rootMargin: '0px 0px -100px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+// Fade in on scroll
+const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('active');
         }
     });
 }, observerOptions);
@@ -98,14 +131,45 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all cards and sections
 const animateElements = document.querySelectorAll(
     '.expertise-card, .service-card, .portfolio-card, .highlight-card, ' +
-    '.publication-card, .education-card, .timeline-item, .therapeutic-card'
+    '.publication-card, .education-card, .timeline-item, .therapeutic-card, ' +
+    '.stat-item, .badge, .language-item, .contact-card'
 );
 
 animateElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+    el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    fadeObserver.observe(el);
+});
+
+// ===================================
+// Parallax Effect on Scroll
+// ===================================
+
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    
+    // Parallax for hero section
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        const heroContent = hero.querySelector('.hero-content');
+        if (heroContent) {
+            heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    }
+    
+    // Parallax for profile card
+    const profileCard = document.querySelector('.profile-card');
+    if (profileCard) {
+        profileCard.style.transform = `translateY(${scrolled * 0.15}px) rotateY(${scrolled * 0.01}deg)`;
+    }
+    
+    // Parallax for floating shapes
+    const shapes = document.querySelectorAll('.shape');
+    shapes.forEach((shape, index) => {
+        const speed = (index + 1) * 0.05;
+        shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+    });
 });
 
 // ===================================
@@ -181,6 +245,86 @@ if (heroStats) {
 }
 
 // ===================================
+// Tilt Effect on Cards
+// ===================================
+
+function addTiltEffect(elements) {
+    elements.forEach(element => {
+        element.addEventListener('mousemove', (e) => {
+            const rect = element.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+        
+        element.addEventListener('mouseleave', () => {
+            element.style.transform = '';
+        });
+    });
+}
+
+// Apply tilt to profile card and specific cards
+const tiltCards = document.querySelectorAll('.profile-card, .expertise-card, .service-card');
+addTiltEffect(tiltCards);
+
+// ===================================
+// Typing Effect for Hero Title
+// ===================================
+
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    const originalText = element.textContent;
+    element.textContent = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(type, 500);
+}
+
+// Uncomment to enable typing effect
+// const heroTitle = document.querySelector('.hero-title');
+// if (heroTitle) {
+//     typeWriter(heroTitle, heroTitle.textContent, 80);
+// }
+
+// ===================================
+// Gradient Animation on Hover
+// ===================================
+
+function animateGradientOnHover(elements) {
+    elements.forEach(element => {
+        element.addEventListener('mouseenter', function() {
+            this.style.backgroundPosition = '100% 0';
+        });
+        
+        element.addEventListener('mouseleave', function() {
+            this.style.backgroundPosition = '0 0';
+        });
+    });
+}
+
+const gradientElements = document.querySelectorAll('.btn-primary, .badge');
+gradientElements.forEach(el => {
+    el.style.backgroundSize = '200% auto';
+    el.style.transition = 'background-position 0.5s ease';
+});
+animateGradientOnHover(gradientElements);
+
+// ===================================
 // Copy Email on Click
 // ===================================
 
@@ -194,7 +338,7 @@ emailLinks.forEach(link => {
             navigator.clipboard.writeText(email).then(() => {
                 // Show temporary feedback
                 const originalText = link.textContent;
-                link.textContent = 'Email copied!';
+                link.textContent = 'Email copied! ✓';
                 link.style.color = '#10b981';
                 
                 setTimeout(() => {
@@ -228,6 +372,34 @@ document.querySelectorAll('a[href^="http"]').forEach(link => {
 });
 
 // ===================================
+// Scroll Progress Indicator
+// ===================================
+
+function createScrollProgressBar() {
+    const progressBar = document.createElement('div');
+    progressBar.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        width: 0%;
+        z-index: 9999;
+        transition: width 0.1s ease;
+        box-shadow: 0 2px 10px rgba(102, 126, 234, 0.5);
+    `;
+    document.body.appendChild(progressBar);
+    
+    window.addEventListener('scroll', () => {
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    });
+}
+
+createScrollProgressBar();
+
+// ===================================
 // Lazy Loading for Images (if any are added)
 // ===================================
 
@@ -249,6 +421,57 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// ===================================
+// Cursor Trail Effect
+// ===================================
+
+function createCursorTrail() {
+    let lastX = 0;
+    let lastY = 0;
+    
+    document.addEventListener('mousemove', (e) => {
+        const trail = document.createElement('div');
+        trail.style.cssText = `
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.6;
+            z-index: 9998;
+            left: ${e.clientX}px;
+            top: ${e.clientY}px;
+            transform: translate(-50%, -50%);
+            animation: cursorFade 1s ease-out forwards;
+        `;
+        
+        document.body.appendChild(trail);
+        
+        setTimeout(() => {
+            trail.remove();
+        }, 1000);
+        
+        lastX = e.clientX;
+        lastY = e.clientY;
+    });
+}
+
+// Add cursor trail CSS animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes cursorFade {
+        to {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(2);
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Uncomment to enable cursor trail
+// createCursorTrail();
 
 // ===================================
 // Performance: Debounce Scroll Events
@@ -285,22 +508,124 @@ window.addEventListener('afterprint', () => {
 });
 
 // ===================================
+// Reveal on Scroll Effect
+// ===================================
+
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 150;
+        
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', debounce(revealOnScroll, 50));
+
+// Add reveal class to sections
+document.querySelectorAll('section').forEach(section => {
+    section.classList.add('reveal');
+});
+
+// ===================================
+// Mouse Movement Parallax
+// ===================================
+
+function addMouseParallax() {
+    document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX / window.innerWidth;
+        const mouseY = e.clientY / window.innerHeight;
+        
+        // Move floating shapes based on mouse position
+        const shapes = document.querySelectorAll('.shape');
+        shapes.forEach((shape, index) => {
+            const speed = (index + 1) * 10;
+            const x = (window.innerWidth - mouseX * speed) / 100;
+            const y = (window.innerHeight - mouseY * speed) / 100;
+            
+            shape.style.transform = `translate(${x}px, ${y}px)`;
+        });
+        
+        // Subtle parallax on cards
+        const cards = document.querySelectorAll('.expertise-card, .service-card');
+        cards.forEach((card, index) => {
+            if (isInViewport(card)) {
+                const rect = card.getBoundingClientRect();
+                const cardCenterX = rect.left + rect.width / 2;
+                const cardCenterY = rect.top + rect.height / 2;
+                
+                const angleX = (e.clientY - cardCenterY) / 50;
+                const angleY = (cardCenterX - e.clientX) / 50;
+                
+                card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+            }
+        });
+    });
+}
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Uncomment to enable mouse parallax
+// addMouseParallax();
+
+// ===================================
 // Console Message
 // ===================================
 
-console.log('%c Daniel Ribes - Senior Health Economist ', 'background: #2563eb; color: white; font-size: 16px; padding: 10px;');
-console.log('%c Interested in the code? Let\'s connect! danribes@iies.es ', 'color: #2563eb; font-size: 12px;');
+console.log('%c Daniel Ribes - Senior Health Economist ', 'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 16px; padding: 10px; border-radius: 5px;');
+console.log('%c Interested in the code? Let\'s connect! danribes@iies.es ', 'color: #667eea; font-size: 12px;');
 
 // ===================================
-// Initialize
+// Initialize on DOMContentLoaded
 // ===================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Website loaded successfully');
+    console.log('✨ Website loaded successfully with enhanced animations');
     
     // Add loaded class to body for CSS animations
     document.body.classList.add('loaded');
     
+    // Create floating shapes
+    createFloatingShapes();
+    
     // Update active nav on load
     updateActiveNav();
+    
+    // Initial reveal
+    revealOnScroll();
+    
+    // Add entrance animation to hero
+    const heroText = document.querySelector('.hero-text');
+    if (heroText) {
+        heroText.style.animation = 'fadeInLeft 1s ease-out';
+    }
+    
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        heroImage.style.animation = 'fadeInRight 1s ease-out';
+    }
 });
+
+// ===================================
+// Service Worker for PWA (Optional)
+// ===================================
+
+if ('serviceWorker' in navigator) {
+    // Uncomment to enable PWA
+    // navigator.serviceWorker.register('/sw.js')
+    //     .then(reg => console.log('Service Worker registered', reg))
+    //     .catch(err => console.log('Service Worker not registered', err));
+}
