@@ -1,34 +1,6 @@
 // ===================================
-// Floating Shapes Background
+// NO Floating Shapes - Removed for steady professional appearance
 // ===================================
-
-function createFloatingShapes() {
-    const shapesContainer = document.createElement('div');
-    shapesContainer.className = 'floating-shapes';
-    document.body.insertBefore(shapesContainer, document.body.firstChild);
-    
-    const shapes = [
-        { type: 'circle', size: 100, top: '10%', left: '10%', duration: 20 },
-        { type: 'square', size: 80, top: '60%', left: '80%', duration: 25 },
-        { type: 'circle', size: 60, top: '80%', left: '20%', duration: 18 },
-        { type: 'square', size: 120, top: '30%', left: '70%', duration: 22 },
-        { type: 'circle', size: 90, top: '50%', left: '50%', duration: 30 }
-    ];
-    
-    shapes.forEach((shape, index) => {
-        const shapeEl = document.createElement('div');
-        shapeEl.className = `shape ${shape.type}`;
-        shapeEl.style.cssText = `
-            width: ${shape.size}px;
-            height: ${shape.size}px;
-            top: ${shape.top};
-            left: ${shape.left};
-            animation-duration: ${shape.duration}s;
-            animation-delay: ${index * 0.5}s;
-        `;
-        shapesContainer.appendChild(shapeEl);
-    });
-}
 
 // ===================================
 // Mobile Navigation Toggle
@@ -143,34 +115,8 @@ animateElements.forEach(el => {
 });
 
 // ===================================
-// Parallax Effect on Scroll
+// NO Parallax Effects - Removed for steady appearance
 // ===================================
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    
-    // Parallax for hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const heroContent = hero.querySelector('.hero-content');
-        if (heroContent) {
-            heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-        }
-    }
-    
-    // Parallax for profile card
-    const profileCard = document.querySelector('.profile-card');
-    if (profileCard) {
-        profileCard.style.transform = `translateY(${scrolled * 0.15}px) rotateY(${scrolled * 0.01}deg)`;
-    }
-    
-    // Parallax for floating shapes
-    const shapes = document.querySelectorAll('.shape');
-    shapes.forEach((shape, index) => {
-        const speed = (index + 1) * 0.05;
-        shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-    });
-});
 
 // ===================================
 // Active Navigation Link
