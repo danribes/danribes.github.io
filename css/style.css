@@ -436,9 +436,9 @@ ul {
 }
 
 .stat-item:hover {
-    transform: translateY(-10px) scale(1.05);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-colored);
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(26, 29, 41, 0.95);
 }
 
 .stat-number {
@@ -540,17 +540,17 @@ ul {
 }
 
 .btn-dark {
-    background: rgba(31, 41, 55, 0.95);
+    background: var(--gradient-primary);
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .btn-dark:hover {
-    background: rgba(31, 41, 55, 1);
-    border-color: rgba(102, 126, 234, 0.5);
+    background: var(--gradient-primary);
+    border-color: transparent;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
     color: white;
 }
 
@@ -895,7 +895,7 @@ ul {
 }
 
 .highlight-card:hover {
-    transform: translateX(10px);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
 }
 
@@ -988,7 +988,7 @@ ul {
 }
 
 .expertise-card:hover {
-    transform: translateY(-15px) scale(1.02);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
     border-color: rgba(102, 126, 234, 0.3);
 }
@@ -1006,7 +1006,7 @@ ul {
 }
 
 .expertise-card:hover .expertise-icon {
-    transform: scale(1.2) rotate(10deg);
+    /* Removed transform for steady appearance */
 }
 
 .expertise-card h3 {
@@ -1131,7 +1131,7 @@ ul {
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
     border-left-color: var(--primary-color);
 }
@@ -1270,7 +1270,7 @@ ul {
 }
 
 .therapeutic-card:hover {
-    transform: translateY(-10px) scale(1.05);
+    /* Removed transform for steady appearance */
     box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
     background: linear-gradient(135deg, rgba(26, 29, 41, 0.95) 0%, rgba(37, 42, 58, 0.95) 100%);
     border-color: rgba(102, 126, 234, 0.5);
@@ -1426,7 +1426,7 @@ ul {
 
 .portfolio-card:hover {
     box-shadow: var(--shadow-2xl);
-    transform: translateY(-10px);
+    /* Removed transform for steady appearance */
 }
 
 .portfolio-card.featured {
@@ -1598,7 +1598,7 @@ ul {
 }
 
 .publication-card:hover {
-    transform: translateY(-10px);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
     border-color: rgba(16, 185, 129, 0.3);
 }
@@ -1834,7 +1834,7 @@ ul {
 }
 
 .education-card:hover {
-    transform: translateY(-10px) rotate(-1deg);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
     border-color: rgba(102, 126, 234, 0.3);
 }
@@ -1945,7 +1945,7 @@ ul {
 }
 
 .language-item:hover {
-    transform: translateY(-10px);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-lg);
     border-color: rgba(102, 126, 234, 0.2);
 }
@@ -2026,7 +2026,7 @@ ul {
 }
 
 .contact-card:hover {
-    transform: translateY(-10px);
+    /* Removed transform for steady appearance */
     box-shadow: var(--shadow-2xl);
     background: linear-gradient(135deg, rgba(26, 29, 41, 0.95) 0%, rgba(37, 42, 58, 0.95) 100%);
     border-color: rgba(102, 126, 234, 0.4);
