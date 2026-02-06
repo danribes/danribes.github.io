@@ -39,10 +39,16 @@
     // --- Renderer ---
     let renderer;
     try {
-        renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+        renderer = new THREE.WebGLRenderer({
+            canvas: canvas,
+            alpha: true,
+            antialias: true,
+            premultipliedAlpha: false
+        });
     } catch (_) {
         return; // WebGL not available — hero looks fine with just CSS
     }
+    renderer.setClearColor(0x000000, 0);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(heroSection.offsetWidth, heroSection.offsetHeight);
 
@@ -66,7 +72,7 @@
             color: color,
             wireframe: true,
             transparent: true,
-            opacity: 0.55
+            opacity: 0.75
         });
         group.add(new THREE.Mesh(geometry, wireMat));
 
@@ -74,7 +80,7 @@
         const fillMat = new THREE.MeshBasicMaterial({
             color: color,
             transparent: true,
-            opacity: 0.07
+            opacity: 0.12
         });
         group.add(new THREE.Mesh(geometry, fillMat));
 
@@ -82,7 +88,7 @@
         const glowMat = new THREE.MeshBasicMaterial({
             color: color,
             transparent: true,
-            opacity: 0.03,
+            opacity: 0.06,
             side: THREE.BackSide
         });
         const glowMesh = new THREE.Mesh(geometry, glowMat);
@@ -128,10 +134,10 @@
     particleGeo.setAttribute('color',    new THREE.BufferAttribute(colors, 3));
 
     const particleMat = new THREE.PointsMaterial({
-        size: 0.04,
+        size: 0.06,
         vertexColors: true,
         transparent: true,
-        opacity: 0.7,
+        opacity: 0.85,
         blending: THREE.AdditiveBlending,
         depthWrite: false
     });
