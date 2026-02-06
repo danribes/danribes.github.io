@@ -12,8 +12,8 @@
     --accent-color: #43e97b;
     --accent-dark: #38f9d7;
     --text-primary: #ffffff;
-    --text-secondary: #b8c1ec;
-    --text-light: #8892b8;
+    --text-secondary: #e0e6f6;
+    --text-light: #cdd4ea;
     --bg-primary: #0f1419;
     --bg-secondary: #1a1d29;
     --bg-tertiary: #252a3a;
@@ -169,12 +169,12 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-light);
     transition: all var(--transition-fast);
 }
 
 a:hover {
-    color: var(--primary-dark);
+    color: #a8b8ff;
 }
 
 ul {
