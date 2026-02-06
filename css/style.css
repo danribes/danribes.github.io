@@ -201,10 +201,7 @@ ul {
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     position: relative;
     display: inline-block;
 }
@@ -915,10 +912,7 @@ ul {
 
 .highlight-card h4 {
     margin-bottom: 0.75rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .highlight-card p {
@@ -1013,10 +1007,7 @@ ul {
 
 .expertise-card h3 {
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .expertise-card p {
@@ -1162,10 +1153,7 @@ ul {
 
 .service-card h3 {
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .service-card p {
@@ -1240,10 +1228,7 @@ ul {
 }
 
 .therapeutic-areas .section-title {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .therapeutic-areas .section-title::after {
@@ -1279,10 +1264,7 @@ ul {
 }
 
 .therapeutic-card h4 {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
 }
@@ -1347,10 +1329,7 @@ ul {
 .github-icon {
     font-size: 4rem;
     flex-shrink: 0;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
 }
 
@@ -1361,10 +1340,7 @@ ul {
 .github-content h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .github-content p {
@@ -1446,10 +1422,7 @@ ul {
 
 .portfolio-header h3 {
     flex: 1;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .project-tag {
@@ -1619,10 +1592,7 @@ ul {
 
 .publication-card h3 {
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     font-size: 1.25rem;
 }
 
@@ -1706,10 +1676,7 @@ ul {
 .timeline-date {
     width: 100px;
     font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     font-size: 1.125rem;
     flex-shrink: 0;
     text-align: right;
@@ -1750,10 +1717,7 @@ ul {
 
 .timeline-content h3 {
     margin-bottom: 0.25rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .timeline-content h4 {
@@ -1860,10 +1824,7 @@ ul {
 
 .education-card h3 {
     margin-bottom: 0.5rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     font-size: 1.25rem;
 }
 
@@ -2044,10 +2005,7 @@ ul {
 .contact-card h3 {
     margin-bottom: 0.75rem;
     font-size: 1.125rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .contact-card a {
@@ -2082,10 +2040,7 @@ ul {
 
 .contact-cta h3 {
     margin-bottom: 1rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 .contact-cta p {
