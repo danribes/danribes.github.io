@@ -407,7 +407,7 @@ ul {
 
 .hero-subtitle {
     font-size: 2rem;
-    color: var(--text-secondary);
+    color: #e8ecff;
     margin-bottom: 1.5rem;
     font-weight: 600;
     animation: slideInFromTop 1s ease-out;
@@ -415,7 +415,7 @@ ul {
 
 .hero-description {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: #dce1f5;
     margin-bottom: 2rem;
     line-height: 1.8;
     animation: fadeIn 1.2s ease-out;
@@ -462,7 +462,7 @@ ul {
 
 .stat-label {
     font-size: 0.875rem;
-    color: var(--text-secondary);
+    color: #dce1f5;
     font-weight: 500;
 }
 
