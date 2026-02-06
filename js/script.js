@@ -544,9 +544,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add loaded class to body for CSS animations
     document.body.classList.add('loaded');
     
-    // Create floating shapes
-    createFloatingShapes();
-    
     // Update active nav on load
     updateActiveNav();
     
