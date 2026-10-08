@@ -2370,3 +2370,10 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+.education-card p a {
+    color: #a5b4fc;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

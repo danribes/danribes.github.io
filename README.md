@@ -269,6 +269,7 @@ Timeline from 2018-2025 covering roles at:
 - Wellmera AG (2018-2020)
 
 ### 9. Education & Certifications
+- Master's in Data Science & AI - Evolve (2026, Distinction)
 - Master in Blockchain Development (2024)
 - Advanced Modelling Methods - York (2017)
 - MSc Health Economics - City London (2014-2015, Distinction)
