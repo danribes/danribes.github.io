@@ -18,7 +18,7 @@ Content follows the latest CV (`Daniel_Ribes_CV_Oct2026`). Sections, in page ord
 - Selected work: case studies, led by the Master's final project *España en escenarios*
 - Publications
 - Experience
-- Education (including the Master's in Data Science & AI, with Honors) and languages
+- Education (including the Master's in Data Science & AI, with First-class Honors) and languages
 - Contact
 
 ## Files
