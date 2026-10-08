@@ -27,6 +27,7 @@ Content follows the latest CV (`Daniel_Ribes_CV_Oct2026`). Sections, in page ord
 index.html      Single-page site
 css/site.css    All styles: colour and type tokens at the top, light and dark themes
 js/site.js      Mobile menu only
+Daniel_Ribes_CV.pdf  Current CV, linked from "Download CV" (replace this file to update it)
 privacy.html    Privacy policy (self-contained styles)
 terms.html      Terms of service (self-contained styles)
 ```
