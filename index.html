@@ -3,739 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Ribes - Senior Health Economist with 10+ years of experience in economic modeling, HTA submissions, and market access strategies">
-    <meta name="keywords" content="health economist, HEOR, HTA, market access, economic modeling, health technology assessment">
+    <meta name="description" content="Daniel Ribes - Senior Health Economist and AI / GenAI Engineer with 10+ years of experience in HEOR modeling, HTA submissions, market access and generative-AI systems">
+    <meta name="keywords" content="health economist, HEOR, HTA, market access, economic modeling, cost-effectiveness, budget impact, generative AI, RAG">
     <meta name="author" content="Daniel Ribes">
-    <title>Daniel Ribes - Senior Health Economist | HEOR & Market Access Expert</title>
-    <link rel="stylesheet" href="css/style.css?v=7">
+    <meta name="theme-color" content="#0E5468">
+    <title>Daniel Ribes - Senior Health Economist & AI Engineer | HEOR & Market Access</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css?v=1">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="#home">Daniel Ribes</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="https://github.com/danribes/" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://drive.google.com/file/d/1UCXwpGxSpxFtsU3flNPN9WbjvRbRwcsp/view?usp=sharing" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                <li><a href="#contact" class="nav-link cta-button">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <canvas id="hero-3d-canvas"></canvas>
-        <div class="container">
-            <div class="hero-content">
+    <header class="nav">
+        <div class="wrap nav-inner">
+            <a class="nav-brand" href="#top">Daniel Ribes</a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+            <nav aria-label="Main">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a class="nav-cta" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="wrap hero-grid">
                 <div class="hero-text">
-                    <h1 class="hero-title">Daniel Ribes</h1>
-                    <h2 class="hero-subtitle">Senior Health Economist</h2>
-                    <p class="hero-description">
-                        Bridging rigorous HEOR methodology with advanced analytics, engineering precision, 
-                        and innovative technology solutions for healthcare decision-making.
+                    <h1 class="hero-name">Daniel Ribes</h1>
+                    <p class="hero-role">Senior Health Economist and AI / GenAI Engineer</p>
+                    <p class="hero-lede">
+                        I build the economic models that pricing and access decisions rest on, and the AI systems
+                        that make evidence work faster and easier to check.
                     </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5</div>
-                            <div class="stat-label">European Markets</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">6</div>
-                            <div class="stat-label">Languages</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">2</div>
-                            <div class="stat-label">Publications</div>
-                        </div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contact">Get in touch</a>
+                        <a class="btn btn-quiet" href="https://github.com/danribes/" target="_blank" rel="noopener noreferrer">GitHub projects</a>
+                        <a class="btn btn-quiet" href="https://drive.google.com/file/d/1UCXwpGxSpxFtsU3flNPN9WbjvRbRwcsp/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="https://github.com/danribes/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">🔗 GitHub Projects</a>
-                        <a href="https://drive.google.com/file/d/1UCXwpGxSpxFtsU3flNPN9WbjvRbRwcsp/view?usp=sharing" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Download Resume</a>
-                    </div>
+                    <dl class="hero-facts">
+                        <div><dt>Years in HEOR</dt><dd>10+</dd></div>
+                        <div><dt>HTA bodies</dt><dd>NICE, NCPE, SMC</dd></div>
+                        <div><dt>Languages</dt><dd>7</dd></div>
+                        <div><dt>Based in</dt><dd>Barcelona</dd></div>
+                    </dl>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-icon">DR</div>
-                        <div class="profile-badges">
-                            <span class="badge">Economic Modeling</span>
-                            <span class="badge">Advanced Programming</span>
-                            <span class="badge">Market Access</span>
-                            <span class="badge">AI Integration</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Summary</h2>
-                <p class="section-subtitle">Multidisciplinary expertise at the intersection of health economics, technology, and innovation</p>
+                <figure class="km">
+                    <svg viewBox="0 0 520 340" role="img" aria-labelledby="kmTitle kmDesc">
+                        <title id="kmTitle">Illustrative Kaplan–Meier survival curves</title>
+                        <desc id="kmDesc">Two stepped survival curves over ten years. The new treatment stays above the comparator, and the shaded area between them represents the survival gained.</desc>
+                        <g class="km-grid">
+                            <path d="M56,24 H500 M56,92 H500 M56,160 H500 M56,228 H500"/>
+                        </g>
+                        <path class="km-gain" d="M56.0,24.0 L78.7,24.0 L78.7,38.9 L82.6,38.9 L82.6,41.4 L87.5,41.4 L87.5,44.4 L92.6,44.4 L92.6,47.6 L93.7,47.6 L93.7,48.3 L101.5,48.3 L101.5,53.0 L115.7,53.0 L115.7,61.4 L127.3,61.4 L127.3,68.0 L158.3,68.0 L158.3,84.9 L201.4,84.9 L201.4,106.3 L219.3,106.3 L219.3,114.5 L232.6,114.5 L232.6,120.4 L244.5,120.4 L244.5,125.5 L248.5,125.5 L248.5,127.2 L280.1,127.2 L280.1,139.9 L292.3,139.9 L292.3,144.5 L309.9,144.5 L309.9,151.0 L331.5,151.0 L331.5,158.5 L341.6,158.5 L341.6,161.9 L416.9,161.9 L416.9,184.8 L468.7,184.8 L468.7,198.2 L480.9,198.2 L480.9,201.1 L500.0,201.1 L500.0,268.1 L430.5,268.1 L430.5,264.8 L412.3,264.8 L412.3,263.0 L403.0,263.0 L403.0,253.7 L362.2,253.7 L362.2,251.6 L354.2,251.6 L354.2,246.6 L336.4,246.6 L336.4,239.2 L313.5,239.2 L313.5,238.6 L311.9,238.6 L311.9,233.3 L297.3,233.3 L297.3,215.8 L256.8,215.8 L256.8,210.3 L245.9,210.3 L245.9,197.0 L222.2,197.0 L222.2,180.8 L197.3,180.8 L197.3,179.1 L194.8,179.1 L194.8,176.4 L191.1,176.4 L191.1,173.2 L186.7,173.2 L186.7,143.3 L150.9,143.3 L150.9,132.9 L140.1,132.9 L140.1,116.6 L124.5,116.6 L124.5,103.8 L113.1,103.8 L113.1,74.2 L89.6,74.2 L89.6,72.4 L88.2,72.4 L88.2,24.0 L56.0,24.0 Z"/>
+                        <path class="km-line km-comparator" pathLength="1" d="M56.0,24.0 H88.2 V72.4 H89.6 V74.2 H113.1 V103.8 H124.5 V116.6 H140.1 V132.9 H150.9 V143.3 H186.7 V173.2 H191.1 V176.4 H194.8 V179.1 H197.3 V180.8 H222.2 V197.0 H245.9 V210.3 H256.8 V215.8 H297.3 V233.3 H311.9 V238.6 H313.5 V239.2 H336.4 V246.6 H354.2 V251.6 H362.2 V253.7 H403.0 V263.0 H412.3 V264.8 H430.5 V268.1 H500.0"/>
+                        <path class="km-line km-treatment" pathLength="1" d="M56.0,24.0 H78.7 V38.9 H82.6 V41.4 H87.5 V44.4 H92.6 V47.6 H93.7 V48.3 H101.5 V53.0 H115.7 V61.4 H127.3 V68.0 H158.3 V84.9 H201.4 V106.3 H219.3 V114.5 H232.6 V120.4 H244.5 V125.5 H248.5 V127.2 H280.1 V139.9 H292.3 V144.5 H309.9 V151.0 H331.5 V158.5 H341.6 V161.9 H416.9 V184.8 H468.7 V198.2 H480.9 V201.1 H500.0"/>
+                        <path class="km-censor" d="M192.5,79.9 v10 M209.1,101.3 v10 M298.6,139.5 v10 M317.2,146.0 v10 M375.7,156.9 v10 M430.7,179.8 v10"/>
+                        <g class="km-axis">
+                            <path d="M56,20 V296 H500"/>
+                            <path d="M56,296 v5 M144.8,296 v5 M233.6,296 v5 M322.4,296 v5 M411.2,296 v5 M500,296 v5 M51,24 h5 M51,160 h5 M51,296 h5"/>
+                        </g>
+                        <g class="km-labels">
+                            <text x="56" y="318" text-anchor="middle">0</text>
+                            <text x="144.8" y="318" text-anchor="middle">2</text>
+                            <text x="233.6" y="318" text-anchor="middle">4</text>
+                            <text x="322.4" y="318" text-anchor="middle">6</text>
+                            <text x="411.2" y="318" text-anchor="middle">8</text>
+                            <text x="500" y="318" text-anchor="middle">10</text>
+                            <text x="278" y="336" text-anchor="middle">Years</text>
+                            <text x="44" y="28" text-anchor="end">1.0</text>
+                            <text x="44" y="164" text-anchor="end">0.5</text>
+                            <text x="44" y="300" text-anchor="end">0</text>
+                        </g>
+                        <g class="km-keys">
+                            <text class="key-treatment" x="346" y="148">New treatment</text>
+                            <text class="key-comparator" x="300" y="262">Comparator</text>
+                            <text class="key-gain" x="376" y="222">Survival gained</text>
+                        </g>
+                    </svg>
+                    <figcaption>
+                        Every cost-effectiveness question starts with the gap between two curves.
+                        <span>Illustrative Kaplan–Meier estimate, not trial data.</span>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="about-content">
-                <div class="about-text">
+        </section>
+
+        <!-- About -->
+        <section class="block" id="about">
+            <div class="wrap block-grid">
+                <h2 class="block-title">About</h2>
+                <div class="block-body">
                     <p class="lead">
-                        Senior Health Economist with <strong>10+ years of experience</strong> leading teams in economic modeling, 
-                        HTA submissions, market access, and pricing strategies across oncology, rare diseases, and cardiometabolic conditions.
+                        Senior Health Economist and AI engineer with <strong>10+ years</strong> bridging rigorous HEOR methodology,
+                        advanced analytics and software engineering. I have led HTA submissions to NICE, NCPE and SMC and built
+                        cost-effectiveness, budget impact, partitioned-survival, Markov and dynamic-transmission models across oncology,
+                        rare disease, cardiometabolic and renal conditions.
                     </p>
                     <p>
-                        Strong analytical expertise combining engineering, statistics, and econometrics with advanced programming 
-                        skills (R, Python, Julia, VBA, C++). Proven track record in AI integration, blockchain development, 
-                        and innovative healthcare solutions delivery.
+                        Since November 2025 I have delivered a portfolio of freelance HEOR models alongside production-grade
+                        generative-AI systems: retrieval-augmented evidence agents, multi-model LLM orchestration and automated
+                        evidence-to-deliverable pipelines. In 2026 I completed a Master's in Data Science &amp; AI with Distinction.
                     </p>
-                    <div class="unique-profile">
-                        <div class="profile-background-pattern"></div>
-                        <h3>Unique Professional Profile</h3>
-                        <div class="profile-circles">
-                            <div class="circle-item">
-                                <div class="circle circle-health">
-                                    <div class="circle-icon">📊</div>
-                                    <div class="circle-text">Health<br>Economist</div>
-                                </div>
-                            </div>
-                            <div class="circle-item">
-                                <div class="circle circle-engineer">
-                                    <div class="circle-icon">⚙️</div>
-                                    <div class="circle-text">Agricultural<br>Engineer</div>
-                                </div>
-                            </div>
-                            <div class="circle-item">
-                                <div class="circle circle-blockchain">
-                                    <div class="circle-icon">🔗</div>
-                                    <div class="circle-text">Blockchain<br>Developer</div>
-                                </div>
-                            </div>
+                    <p>
+                        My background is unusual for the field. I trained as an agricultural engineer, then as a health economist,
+                        then as a blockchain developer, and I have worked and studied in Spain, the UK, Switzerland, the Netherlands and Belgium.
+                    </p>
+                    <ul class="pillars">
+                        <li>
+                            <h3>HTA track record</h3>
+                            <p>Submissions to NICE, NCPE and SMC for clients including BeiGene, Pharmanovia and UCB.</p>
+                        </li>
+                        <li>
+                            <h3>GenAI for evidence</h3>
+                            <p>RAG evidence agents, MCP servers and multi-model LLM orchestration built for HEOR work.</p>
+                        </li>
+                        <li>
+                            <h3>Models people can audit</h3>
+                            <p>Transparent Excel/VBA, R and Python models, with independent QC of client models.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise -->
+        <section class="block" id="expertise">
+            <div class="wrap block-grid">
+                <h2 class="block-title">Expertise</h2>
+                <div class="block-body">
+                    <div class="skills">
+                        <div class="skill">
+                            <h3>Economic modeling &amp; HTA</h3>
+                            <p>Cost-effectiveness and budget impact models for NICE, NCPE and SMC submissions.</p>
+                            <ul><li>Partitioned survival models</li><li>Markov, semi-Markov &amp; microsimulation</li><li>Dynamic transmission models</li><li>PSA, OWSA &amp; DSA</li></ul>
                         </div>
-                        <p class="profile-note">
-                            A rare intersection of domains enabling comprehensive understanding of technical, 
-                            economic, and innovative healthcare challenges.
-                        </p>
+                        <div class="skill">
+                            <h3>Survival &amp; statistics</h3>
+                            <p>Survival analysis and parametric modeling to interpret clinical data.</p>
+                            <ul><li>Parametric survival extrapolation</li><li>Kaplan–Meier analysis</li><li>Hazard ratio estimation</li></ul>
+                        </div>
+                        <div class="skill">
+                            <h3>Evidence synthesis</h3>
+                            <p>Literature reviews and network meta-analysis to support value propositions.</p>
+                            <ul><li>Bayesian &amp; frequentist NMA</li><li>Indirect comparisons (MAIC, Bucher, STC)</li><li>Real-world evidence</li></ul>
+                        </div>
+                        <div class="skill">
+                            <h3>Pricing &amp; market access</h3>
+                            <p>Pricing strategy, reimbursement dossiers and value communication tools.</p>
+                            <ul><li>Global value dossiers</li><li>Pricing negotiation tools</li><li>Market access strategy</li></ul>
+                        </div>
+                        <div class="skill">
+                            <h3>AI, GenAI &amp; blockchain</h3>
+                            <p>Generative-AI systems and machine learning for evidence work.</p>
+                            <ul><li>RAG &amp; LLM agents (LangGraph, ChromaDB)</li><li>MCP servers &amp; multi-model orchestration</li><li>scikit-learn, PyTorch, SHAP</li><li>Solidity &amp; Hyperledger</li></ul>
+                        </div>
+                        <div class="skill">
+                            <h3>Programming</h3>
+                            <p>Full-stack skills applied to modeling and tool building.</p>
+                            <ul class="tags"><li>R</li><li>Python</li><li>VBA</li><li>C++</li><li>Julia</li><li>SQL</li><li>TypeScript</li><li>FastAPI</li><li>Docker</li><li>Power BI</li><li>WinBUGS</li></ul>
+                        </div>
                     </div>
-                </div>
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🌍</div>
-                        <h4>International Experience</h4>
-                        <p>Worked and studied across Spain, UK, Switzerland, Netherlands, and Belgium, adapting to diverse healthcare systems.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">💡</div>
-                        <h4>Innovation Leader</h4>
-                        <p>Pioneering AI integration and blockchain development for next-generation healthcare solutions.</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🎯</div>
-                        <h4>Proven Track Record</h4>
-                        <p>Successfully delivered HTA submissions for NICE, NCPE, SMC with major pharmaceutical clients.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Core Competencies -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Core Competencies</h2>
-                <p class="section-subtitle">Technical skills and domain expertise spanning health economics and advanced technology</p>
+                    <h3 class="sub-title">What I deliver</h3>
+                    <ul class="services">
+                        <li><strong>HTA submissions &amp; dossiers.</strong> NICE technology appraisals, global value dossiers and payer objection handlers.</li>
+                        <li><strong>Economic models.</strong> Cost-effectiveness, budget impact and dynamic transmission models.</li>
+                        <li><strong>Pricing &amp; access strategy.</strong> Pricing strategy, portfolio pricing models and access planning.</li>
+                        <li><strong>Evidence synthesis.</strong> Network meta-analyses, systematic literature reviews and real-world evidence.</li>
+                        <li><strong>AI integration.</strong> Workflow automation, predictive analytics and RAG evidence agents.</li>
+                        <li><strong>Custom tools.</strong> Excel/VBA applications, interactive dashboards and R/Python packages.</li>
+                    </ul>
+
+                    <h3 class="sub-title">Therapeutic areas</h3>
+                    <dl class="areas">
+                        <div><dt>Oncology</dt><dd>Prostate cancer, RCC, NSCLC, lymphoma, NETs, CAR-T</dd></div>
+                        <div><dt>Rare diseases</dt><dd>Cushing's syndrome, sickle cell disease, hepatitis delta</dd></div>
+                        <div><dt>Cardiometabolic &amp; renal</dt><dd>Obesity, diabetes, Lp(a) / CVD, CKD</dd></div>
+                        <div><dt>Vaccines</dt><dd>RSV, infectious disease prevention</dd></div>
+                        <div><dt>Autoimmune</dt><dd>Rheumatic diseases, biologics</dd></div>
+                        <div><dt>MedTech</dt><dd>Cardiac devices, PFO closure</dd></div>
+                    </dl>
+                </div>
             </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">📊</div>
-                    <h3>Economic Modeling & HTA</h3>
-                    <p>Cost-Effectiveness Analysis (CEA), Budget Impact Models (BIM), and health technology assessment submissions for NICE, NCPE, and SMC.</p>
-                    <ul class="expertise-list">
-                        <li>Partitioned Survival Models</li>
-                        <li>Markov Models & Decision Trees</li>
-                        <li>Dynamic Transmission Models</li>
+        </section>
+
+        <!-- Work -->
+        <section class="block" id="work">
+            <div class="wrap block-grid">
+                <h2 class="block-title">Selected work</h2>
+                <div class="block-body">
+                    <article class="case case-featured">
+                        <div class="case-meta">
+                            <p class="case-when">2026</p>
+                            <p class="case-role">Master's final project</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>España en escenarios</h3>
+                            <p>
+                                A transparent macro-fiscal simulation and AI-model evaluation platform for Spain. It shows what a set of
+                                assumptions on interest rates, growth, public balance and demographics implies for debt, housing and
+                                twelve household profiles. Defended in September 2026 for the Master's in Data Science &amp; AI at Evolve.
+                            </p>
+                            <ul>
+                                <li>Semi-structural scenario engine in Python and TypeScript with stochastic debt projections</li>
+                                <li>Regional housing models with bootstrap uncertainty</li>
+                                <li>Gradient-boosting sovereign-default classifier explained with SHAP</li>
+                                <li>RAG assistant that answers with cited passages, on dated data cut-offs with reproducible builds</li>
+                            </ul>
+                            <ul class="tags"><li>Python</li><li>TypeScript</li><li>Monte Carlo</li><li>RAG</li></ul>
+                            <a class="text-link" href="https://danribes.github.io/tfm-data-science/" target="_blank" rel="noopener">Open the project</a>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <div class="case-meta">
+                            <p class="case-when">2025 – present</p>
+                            <p class="case-role">AI engineer, DANRIBES S.L.</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>GenAI for HEOR: evidence agents and model QC</h3>
+                            <p>Generative-AI systems that speed up evidence generation and check health economic models.</p>
+                            <ul>
+                                <li>RAG evidence agents (LangGraph, ChromaDB, Streamlit) that answer clinical and HEOR questions with sources</li>
+                                <li>AI-versus-rule-based model QC benchmark: a 100-error fault library across 72 seeded models with a VBA detection engine</li>
+                                <li>HEOR Studio, an AI-native toolkit of skills, MCP servers and workflows that builds documented R and Excel models</li>
+                                <li>ISPOR 2026 abstract and poster on a human-in-the-loop AI QC workflow for HEOR Excel models</li>
+                            </ul>
+                            <ul class="tags"><li>LangGraph</li><li>MCP</li><li>Python</li><li>Excel/VBA</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <div class="case-meta">
+                            <p class="case-when">2021 – 2024</p>
+                            <p class="case-role">Lead modeler, GSK</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>Arexvy RSV dynamic transmission model</h3>
+                            <p>Epidemiologic and pharmacoeconomic models for Arexvy, the RSV vaccine for older adults, supporting global market access.</p>
+                            <ul>
+                                <li>Hybrid Excel / R / C++ architecture with ODE-based dynamic transmission</li>
+                                <li>Multi-country model that adapts to different demographics</li>
+                                <li>Aligned with ICON PLC and RTI on the global value dossier</li>
+                                <li>Informed vaccination timing and target population decisions</li>
+                            </ul>
+                            <ul class="tags"><li>Excel/VBA</li><li>R (ODEs)</li><li>C++</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <div class="case-meta">
+                            <p class="case-when">2021 – 2024</p>
+                            <p class="case-role">Model developer, with CHESS</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>RSV static cost-effectiveness and budget impact models</h3>
+                            <p>Static CEM and BIM built for multiple country adaptations.</p>
+                            <ul>
+                                <li>Flexible architecture for market localisation</li>
+                                <li>ICER and QALY estimation with scenario and sensitivity analysis</li>
+                                <li>Integrated budget impact projections for payers</li>
+                            </ul>
+                            <ul class="tags"><li>Excel</li><li>VBA</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <div class="case-meta">
+                            <p class="case-when">2020 – 2021</p>
+                            <p class="case-role">HEOR manager, Novartis Oncology</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>NET portfolio budget impact model</h3>
+                            <p>A portfolio approach for neuroendocrine tumours that allows flexible pricing across several products.</p>
+                            <ul>
+                                <li>Pricing mechanisms with volume capping and portfolio discounts</li>
+                                <li>Matrix engine linking patient flow to survival data</li>
+                                <li>Real-time scenarios for payer negotiations, adapted for Canada and LATAM</li>
+                            </ul>
+                            <ul class="tags"><li>VBA engine</li><li>Budget impact</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="case">
+                        <div class="case-meta">
+                            <p class="case-when">2018 – 2020</p>
+                            <p class="case-role">Model developer, Wellmera</p>
+                        </div>
+                        <div class="case-body">
+                            <h3>Cushing's syndrome semi-Markov model</h3>
+                            <p>A non-homogeneous semi-Markov cohort model estimating the cost-effectiveness of osilodrostat (LCI699) in Finland.</p>
+                            <ul>
+                                <li>262-state engine based on treatment history and response</li>
+                                <li>Executive interface for non-technical users</li>
+                                <li>"World with / without" scenarios, tornado analysis and patient flow charts</li>
+                            </ul>
+                            <ul class="tags"><li>Excel/VBA</li><li>Semi-Markov</li></ul>
+                        </div>
+                    </article>
+
+                    <p class="aside">More code, models and dashboards are on <a class="text-link" href="https://github.com/danribes/" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="block" id="publications">
+            <div class="wrap block-grid">
+                <h2 class="block-title">Publications</h2>
+                <div class="block-body">
+                    <article class="pub">
+                        <p class="pub-journal">Kidney International Reports, 2021</p>
+                        <h3><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7938080/" target="_blank" rel="noopener">Cost-effectiveness analysis of a multi-faceted acute kidney injury intervention approach</a></h3>
+                        <p>A decision tree model showing the economic value of early detection of acute kidney injury.</p>
+                    </article>
+                    <article class="pub">
+                        <p class="pub-journal">Current Medical Research and Opinion, 2018</p>
+                        <h3><a href="https://www.ncbi.nlm.nih.gov/pubmed/29292670" target="_blank" rel="noopener">Cost-effectiveness analysis of paliperidone palmitate for schizophrenia in the UAE</a></h3>
+                        <p>A validated one-year decision tree adapted to the UAE, comparing long-acting injectable and oral antipsychotics.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="block" id="experience">
+            <div class="wrap block-grid">
+                <h2 class="block-title">Experience</h2>
+                <div class="block-body">
+                    <ol class="timeline">
+                        <li>
+                            <p class="tl-when">Nov 2025 – present</p>
+                            <div>
+                                <h3>Freelance HEOR Modeler &amp; AI Engineer</h3>
+                                <p class="tl-where">DANRIBES S.L., Barcelona (remote)</p>
+                                <p>Oncology CAR-T cost-effectiveness and multi-line lymphoma budget impact models, independent model QC and VBA audits, ITC/NMA feasibility tooling, and GenAI systems for evidence work.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">Jul – Oct 2025</p>
+                            <div>
+                                <h3>Engagement Manager</h3>
+                                <p class="tl-where">IQVIA, Barcelona (remote)</p>
+                                <p>Projects with the IQVIA Core Obesity Model and integrated Obesity–Diabetes Model across 20+ year cardiometabolic horizons.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">Oct 2024 – Jul 2025</p>
+                            <div>
+                                <h3>HTA Modeler &amp; AI Integration Project Lead</h3>
+                                <p class="tl-where">AXIS Consulting UK, Barcelona (remote)</p>
+                                <p>Coordinated HTA submissions to NICE, NCPE and SMC, and brought AI into consultancy workflows to cut manual evidence work.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">Jul 2021 – Oct 2024</p>
+                            <div>
+                                <h3>Lead Modeler, Arexvy RSV</h3>
+                                <p class="tl-where">GSK (freelance), Barcelona (remote)</p>
+                                <p>Dynamic transmission, static cost-effectiveness and budget impact models for the Arexvy vaccine.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">Jun 2020 – Jun 2021</p>
+                            <div>
+                                <h3>Region Europe HEOR Manager</h3>
+                                <p class="tl-where">Novartis Oncology, Basel</p>
+                                <p>Supported country affiliates with HTA submissions, built pricing constructs and set up a HEOR Centre of Excellence.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">Mar 2018 – May 2020</p>
+                            <div>
+                                <h3>Health Economist Modeler, Head</h3>
+                                <p class="tl-where">Wellmera AG, Basel</p>
+                                <p>Built a 262-state semi-Markov model for Cushing's syndrome and published research on acute kidney injury interventions.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">2015 – 2018</p>
+                            <div>
+                                <h3>Health Economist Modeler</h3>
+                                <p class="tl-where">Envision Pharma–Curo, Wickenstones and Novartis Oncology (intern), UK</p>
+                                <p>Health economic modeling for pharmaceutical clients after the MSc in Health Economics.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="block" id="education">
+            <div class="wrap block-grid">
+                <h2 class="block-title">Education</h2>
+                <div class="block-body">
+                    <ol class="timeline timeline-compact">
+                        <li>
+                            <p class="tl-when">2026</p>
+                            <div>
+                                <h3>Master's in Data Science &amp; AI <span class="honour">With Distinction</span></h3>
+                                <p class="tl-where">Evolve</p>
+                                <p>Python, machine learning, deep learning, NLP, LLMs and RAG. <a class="text-link" href="https://evolve.es/certificados/9c15dd02-ef88-4553-a93d-5267aad84993/" target="_blank" rel="noopener">Verify certificate</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">2024</p>
+                            <div>
+                                <h3>Master in Blockchain Development</h3>
+                                <p class="tl-where">Codecrypto Academy, Madrid</p>
+                                <p>Full stack, DevOps, Solidity and Hyperledger.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">2017</p>
+                            <div>
+                                <h3>Advanced Modelling Methods for Economic Evaluation</h3>
+                                <p class="tl-where">Centre for Health Economics, University of York</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">2014 – 2015</p>
+                            <div>
+                                <h3>MSc in Health Economics <span class="honour">With Distinction</span></h3>
+                                <p class="tl-where">City, University of London</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">2005 – 2006</p>
+                            <div>
+                                <h3>Management Development Program (PDD)</h3>
+                                <p class="tl-where">IESE Business School, Universidad de Navarra</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tl-when">1986 – 1993</p>
+                            <div>
+                                <h3>MSc in Agricultural Engineering</h3>
+                                <p class="tl-where">UPC Barcelona and Wageningen University (Erasmus)</p>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <h3 class="sub-title">Languages</h3>
+                    <ul class="langs">
+                        <li><span class="lang">Spanish</span><span class="scale" data-level="5" role="img" aria-label="5 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Native</span></li>
+                        <li><span class="lang">Catalan</span><span class="scale" data-level="5" role="img" aria-label="5 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Native</span></li>
+                        <li><span class="lang">English</span><span class="scale" data-level="4" role="img" aria-label="4 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Fluent</span></li>
+                        <li><span class="lang">French</span><span class="scale" data-level="3" role="img" aria-label="3 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Advanced</span></li>
+                        <li><span class="lang">Italian</span><span class="scale" data-level="3" role="img" aria-label="3 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Advanced</span></li>
+                        <li><span class="lang">Portuguese</span><span class="scale" data-level="2" role="img" aria-label="2 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Intermediate</span></li>
+                        <li><span class="lang">German</span><span class="scale" data-level="1" role="img" aria-label="1 of 5"><i></i><i></i><i></i><i></i><i></i></span><span class="level">Basic</span></li>
                     </ul>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">📈</div>
-                    <h3>Survival & Statistical Analysis</h3>
-                    <p>Advanced survival analysis, parametric modeling, and complex statistical evaluations for clinical data interpretation.</p>
-                    <ul class="expertise-list">
-                        <li>Parametric Survival Extrapolation</li>
-                        <li>Kaplan-Meier Analysis</li>
-                        <li>Hazard Ratio Estimation</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">🔬</div>
-                    <h3>Evidence Synthesis</h3>
-                    <p>Systematic literature reviews and Network Meta-Analysis (NMA) to support value propositions and comparative effectiveness.</p>
-                    <ul class="expertise-list">
-                        <li>Bayesian & Frequentist NMA</li>
-                        <li>Indirect Treatment Comparisons</li>
-                        <li>Real-World Evidence Analysis</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">💰</div>
-                    <h3>Pricing & Market Access</h3>
-                    <p>Comprehensive pricing strategies, reimbursement dossiers, and value communication tools for global markets.</p>
-                    <ul class="expertise-list">
-                        <li>Global Value Dossier Development</li>
-                        <li>Pricing Negotiation Tools</li>
-                        <li>Market Access Strategy</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">💻</div>
-                    <h3>Advanced Programming</h3>
-                    <p>Full-stack development capabilities applied to health economics modeling and tool creation.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge">R</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Julia</span>
-                        <span class="tech-badge">VBA</span>
-                        <span class="tech-badge">C++</span>
-                        <span class="tech-badge">WinBUGS</span>
-                    </div>
-                </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">🤖</div>
-                    <h3>AI & Blockchain Integration</h3>
-                    <p>Leveraging AI for process optimization and blockchain for secure, decentralized healthcare solutions.</p>
-                    <ul class="expertise-list">
-                        <li>AI-Driven Workflow Automation</li>
-                        <li>Solidity & Hyperledger</li>
-                        <li>Smart Contract Development</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Services</h2>
-                <p class="section-subtitle">Comprehensive health economics and outcomes research solutions</p>
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="wrap">
+                <h2 class="contact-title">Have a model to build, check or speed up?</h2>
+                <p class="contact-lede">
+                    I design transparent HEOR models that inform pricing and access decisions, and I use AI to make
+                    evidence generation faster. Write to me about your project.
+                </p>
+                <a class="contact-email" href="mailto:danribes@iies.es?subject=Enquiry%20from%20danribes.github.io">danribes@iies.es</a>
+                <dl class="contact-list">
+                    <div><dt>Phone</dt><dd><a href="tel:+34696628377">+34 696 62 83 77</a></dd></div>
+                    <div><dt>Location</dt><dd>Barcelona, Spain. Working remotely.</dd></div>
+                    <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/daniel-ribes-health-economics-data-scientist-engineer-ai-blockchain/" target="_blank" rel="noopener noreferrer">Daniel Ribes</a></dd></div>
+                    <div><dt>GitHub</dt><dd><a href="https://github.com/danribes/" target="_blank" rel="noopener noreferrer">danribes</a></dd></div>
+                    <div><dt>CV</dt><dd><a href="https://drive.google.com/file/d/1UCXwpGxSpxFtsU3flNPN9WbjvRbRwcsp/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></dd></div>
+                </dl>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-number">01</div>
-                    <h3>HTA Submissions & Dossiers</h3>
-                    <p>
-                        Complete HTA submission support for NICE, NCPE, SMC, and other European agencies. 
-                        Development of evidence-based value dossiers and reimbursement strategies.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ NICE Technology Appraisals</span>
-                        <span>✓ Global Value Dossiers</span>
-                        <span>✓ Payer Objection Handlers</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">02</div>
-                    <h3>Economic Modeling</h3>
-                    <p>
-                        Development of sophisticated cost-effectiveness models, budget impact analyses, 
-                        and dynamic transmission models using state-of-the-art methodologies.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ Cost-Effectiveness Analysis</span>
-                        <span>✓ Budget Impact Models</span>
-                        <span>✓ Dynamic Transmission Models</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">03</div>
-                    <h3>Pricing & Market Access Strategy</h3>
-                    <p>
-                        Strategic pricing support and market access planning for pharmaceutical products 
-                        across multiple markets and therapeutic areas.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ Pricing Strategy Development</span>
-                        <span>✓ Portfolio Pricing Models</span>
-                        <span>✓ Market Access Planning</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">04</div>
-                    <h3>Evidence Synthesis & Analysis</h3>
-                    <p>
-                        Systematic literature reviews, network meta-analyses, and real-world evidence 
-                        studies to support clinical and economic value propositions.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ Network Meta-Analysis</span>
-                        <span>✓ Systematic Literature Reviews</span>
-                        <span>✓ Real-World Evidence</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">05</div>
-                    <h3>Advanced Analytics & AI Integration</h3>
-                    <p>
-                        Integration of artificial intelligence and machine learning to optimize healthcare 
-                        analytics, automate workflows, and enhance decision-making.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ Process Automation</span>
-                        <span>✓ Predictive Analytics</span>
-                        <span>✓ AI-Driven Insights</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">06</div>
-                    <h3>Custom Tool Development</h3>
-                    <p>
-                        Design and development of user-friendly, interactive tools for payer engagement, 
-                        scenario analysis, and value demonstration.
-                    </p>
-                    <div class="service-features">
-                        <span>✓ Excel/VBA Applications</span>
-                        <span>✓ Interactive Dashboards</span>
-                        <span>✓ R/Python Packages</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Therapeutic Areas -->
-    <section class="therapeutic-areas">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Therapeutic Expertise</h2>
-                <p class="section-subtitle">Deep knowledge across diverse disease areas</p>
-            </div>
-            <div class="therapeutic-grid">
-                <div class="therapeutic-card">
-                    <h4>Oncology</h4>
-                    <p>Prostate Cancer, RCC, NSCLC, NETs</p>
-                </div>
-                <div class="therapeutic-card">
-                    <h4>Rare Diseases</h4>
-                    <p>Cushing's Syndrome, Sickle Cell Disease</p>
-                </div>
-                <div class="therapeutic-card">
-                    <h4>Vaccines</h4>
-                    <p>RSV, Infectious Disease Prevention</p>
-                </div>
-                <div class="therapeutic-card">
-                    <h4>Autoimmune</h4>
-                    <p>Rheumatic Diseases, Biologics</p>
-                </div>
-                <div class="therapeutic-card">
-                    <h4>MedTech</h4>
-                    <p>Cardiac Devices, PFO Closure</p>
-                </div>
-                <div class="therapeutic-card">
-                    <h4>Cardiometabolic</h4>
-                    <p>Obesity, Diabetes, CVD</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Showcase of innovative health economics work</p>
-            </div>
-            <div class="github-callout">
-                <div class="github-icon">💻</div>
-                <div class="github-content">
-                    <h3>Explore More on GitHub</h3>
-                    <p>Visit my GitHub profile to see additional portfolio projects, code repositories, and open-source contributions in health economics, blockchain, and AI integration.</p>
-                    <a href="https://github.com/danribes/" class="btn btn-github" target="_blank" rel="noopener noreferrer">
-                        🔗 View GitHub Portfolio
-                    </a>
-                </div>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-card featured">
-                    <div class="portfolio-header">
-                        <h3>GSK Arexvy - RSV Dynamic Transmission Model</h3>
-                        <span class="project-tag">Lead Modeler</span>
-                    </div>
-                    <p class="project-period">July 2021 – October 2024</p>
-                    <p class="project-description">
-                        Led development of comprehensive epidemiologic and pharmacoeconomic models for Arexvy 
-                        (RSV vaccine for older adults) to support global market access strategies.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Built hybrid Excel/R/C++ architecture with ODE-based dynamic transmission modeling</li>
-                            <li>Designed flexible, multi-country scalable model adaptable to different demographics</li>
-                            <li>Coordinated with ICON PLC and RTI for global value dossier alignment</li>
-                            <li>Informed vaccination timing and target population policy decisions</li>
-                        </ul>
-                    </div>
-                    <div class="tech-used">
-                        <span class="tech-badge">Excel/VBA</span>
-                        <span class="tech-badge">R (ODEs)</span>
-                        <span class="tech-badge">C++</span>
-                        <span class="tech-badge">Dynamic Modeling</span>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-header">
-                        <h3>RSV Static Cost-Effectiveness Model</h3>
-                        <span class="project-tag">Model Developer</span>
-                    </div>
-                    <p class="project-period">Collaboration with CHESS</p>
-                    <p class="project-description">
-                        Developed comprehensive static Cost-Effectiveness Model (CEM) and Budget Impact Models (BIM) 
-                        tailored for multiple country adaptations.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Flexible architecture for diverse market localization</li>
-                            <li>Clear ICER analysis and QALY estimation</li>
-                            <li>Comprehensive scenario planning and sensitivity analysis</li>
-                            <li>Integrated budget impact projections for payers</li>
-                        </ul>
-                    </div>
-                    <div class="tech-used">
-                        <span class="tech-badge">Excel</span>
-                        <span class="tech-badge">VBA</span>
-                        <span class="tech-badge">Static Modeling</span>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-header">
-                        <h3>NET Portfolio Budget Impact Model</h3>
-                        <span class="project-tag">HEOR Manager</span>
-                    </div>
-                    <p class="project-period">Novartis Oncology, 2020-2021</p>
-                    <p class="project-description">
-                        Developed innovative portfolio approach for Neuroendocrine Tumors allowing flexible 
-                        pricing strategies across multiple products.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Innovations:</h4>
-                        <ul>
-                            <li>Strategic pricing mechanisms with volume capping and portfolio discounts</li>
-                            <li>Semi-defined matrix engine linking patient flow to survival data</li>
-                            <li>Real-time scenario evaluation for payer negotiations</li>
-                            <li>Adapted for Canadian and LATAM markets</li>
-                        </ul>
-                    </div>
-                    <div class="tech-used">
-                        <span class="tech-badge">VBA Engine</span>
-                        <span class="tech-badge">Portfolio Strategy</span>
-                        <span class="tech-badge">Budget Impact</span>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-header">
-                        <h3>Cushing's Syndrome Semi-Markov Model</h3>
-                        <span class="project-tag">Model Developer</span>
-                    </div>
-                    <p class="project-period">Osilodrostat (LCI699) - Finland Setting</p>
-                    <p class="project-description">
-                        Sophisticated non-homogeneous semi-Markov cohort model to estimate cost-effectiveness 
-                        of osilodrostat versus other treatments.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Technical Excellence:</h4>
-                        <ul>
-                            <li>Complex 262-state engine based on treatment history and response</li>
-                            <li>User-friendly Executive UI for non-technical users</li>
-                            <li>Scenario flexibility with "World WITH/WITHOUT" comparisons</li>
-                            <li>Comprehensive tornado analysis and patient flow visualization</li>
-                        </ul>
-                    </div>
-                    <div class="tech-used">
-                        <span class="tech-badge">Excel/VBA</span>
-                        <span class="tech-badge">Semi-Markov</span>
-                        <span class="tech-badge">UI Design</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications -->
-    <section class="publications">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Published Research</h2>
-                <p class="section-subtitle">Peer-reviewed contributions to health economics literature</p>
-            </div>
-            <div class="publications-grid">
-                <div class="publication-card">
-                    <div class="publication-journal">Kidney International Reports (2021)</div>
-                    <h3>Cost-Effectiveness Analysis of a Multi-Faceted Acute Kidney Injury Intervention Approach</h3>
-                    <p>
-                        Demonstrated the economic value and clinical impact of AKI interventions using a decision tree model, 
-                        highlighting significant potential cost savings and improved patient outcomes through early detection.
-                    </p>
-                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7938080/" target="_blank" class="publication-link">
-                        View Article →
-                    </a>
-                </div>
-                <div class="publication-card">
-                    <div class="publication-journal">Current Medical Research and Opinion (2018)</div>
-                    <h3>Cost-Effectiveness Analysis of Paliperidone Palmitate for Schizophrenia in the UAE</h3>
-                    <p>
-                        Adapted a 1-year validated decision-tree model to the UAE setting to estimate cost-effectiveness 
-                        of long-acting injectable antipsychotics vs. oral treatments, focusing on adherence advantages.
-                    </p>
-                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/29292670" target="_blank" class="publication-link">
-                        View Article →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Timeline -->
-    <section class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Journey</h2>
-                <p class="section-subtitle">Career progression in health economics and innovation</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3>Engagement Manager</h3>
-                        <h4>IQVIA | Barcelona (Remote)</h4>
-                        <p>Leading innovative projects with Core Obesity Model and integrated Obesity-Diabetes Model, 
-                        coordinating teams on collaborative initiatives for improved patient outcomes.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2024-2025</div>
-                    <div class="timeline-content">
-                        <h3>HTA Modeler & AI Integration Lead</h3>
-                        <h4>AXIS Consulting UK | Barcelona (Remote)</h4>
-                        <p>Coordinated HTA submissions for NICE, NCPE, SMC. Integrated AI solutions to streamline 
-                        consultancy processes and improve operational efficiency.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2021-2024</div>
-                    <div class="timeline-content">
-                        <h3>Lead Modeler - Arexvy RSV</h3>
-                        <h4>Freelance (GSK Project) | Barcelona (Remote)</h4>
-                        <p>Built comprehensive epidemiologic and pharmacoeconomic models for Arexvy vaccine, 
-                        developing dynamic transmission models in Excel, VBA, R, and C++.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2020-2021</div>
-                    <div class="timeline-content">
-                        <h3>Region Europe HEOR Manager</h3>
-                        <h4>Novartis Oncology | Basel, Switzerland</h4>
-                        <p>Supported country affiliates with HTA submissions, developed pricing commercial constructs, 
-                        and established HEOR Centre of Excellence.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2018-2020</div>
-                    <div class="timeline-content">
-                        <h3>Health Economist Modeler Head</h3>
-                        <h4>Wellmera AG | Basel, Switzerland</h4>
-                        <p>Published research in Kidney International Reports, developed pricing strategy models 
-                        for Neuroendocrine Tumor treatments across multiple markets.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education & Certifications</h2>
-                <p class="section-subtitle">Academic foundation spanning economics, engineering, and technology</p>
-            </div>
-            <div class="education-grid">
-                <div class="education-card highlight">
-                    <div class="education-year">2026</div>
-                    <h3>Master's in Data Science &amp; AI</h3>
-                    <h4>Evolve</h4>
-                    <p><strong>With Distinction</strong> - Python, ML, Deep Learning, NLP, LLMs &amp; RAG · <a href="https://evolve.es/certificados/9c15dd02-ef88-4553-a93d-5267aad84993/" target="_blank" rel="noopener">Verify</a></p>
-                </div>
-                <div class="education-card">
-                    <div class="education-year">2024</div>
-                    <h3>Master in Blockchain Development</h3>
-                    <h4>Codecrypto Academy, Madrid</h4>
-                    <p>Full Stack, DevOps, Solidity & Hyperledger</p>
-                </div>
-                <div class="education-card">
-                    <div class="education-year">2017</div>
-                    <h3>Advanced Modelling Methods</h3>
-                    <h4>University of York</h4>
-                    <p>Centre for Health Economics - Advanced economic evaluation techniques</p>
-                </div>
-                <div class="education-card highlight">
-                    <div class="education-year">2014-2015</div>
-                    <h3>MSc in Health Economics</h3>
-                    <h4>City University of London</h4>
-                    <p><strong>With Distinction</strong></p>
-                </div>
-                <div class="education-card">
-                    <div class="education-year">2005-2006</div>
-                    <h3>Management Development Program (PDD)</h3>
-                    <h4>IESE Business School</h4>
-                    <p>Universidad de Navarra - Executive education</p>
-                </div>
-                <div class="education-card">
-                    <div class="education-year">1986-1993</div>
-                    <h3>MSc in Agricultural Engineering</h3>
-                    <h4>UPC & Wageningen University</h4>
-                    <p>Universitat Politècnica de Catalunya + ERASMUS Program</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages -->
-    <section class="languages">
-        <div class="container">
-            <h2 class="section-title">Language Proficiency</h2>
-            <div class="languages-grid">
-                <div class="language-item">
-                    <div class="language-name">Spanish</div>
-                    <div class="language-level">Native</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">Catalan</div>
-                    <div class="language-level">Native</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">English</div>
-                    <div class="language-level">Fluent</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">French</div>
-                    <div class="language-level">Advanced</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">Italian</div>
-                    <div class="language-level">Advanced</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">German</div>
-                    <div class="language-level">Basic</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">Discuss how I can support your market access goals</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <a href="mailto:danribes@iies.es">danribes@iies.es</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📱</div>
-                        <h3>Phone</h3>
-                        <a href="tel:+34696628377">+34 696 62 83 77</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>Barcelona, Spain<br>(Remote-Ready)</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💼</div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/daniel-ribes-health-economics-and-blockchain/" target="_blank">Connect on LinkedIn</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">💻</div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/danribes/" target="_blank" rel="noopener noreferrer">View Portfolio Projects</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📄</div>
-                        <h3>Resume</h3>
-                        <a href="https://drive.google.com/file/d/1UCXwpGxSpxFtsU3flNPN9WbjvRbRwcsp/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
-                    </div>
-                </div>
-                <div class="contact-cta">
-                    <h3>Ready to Collaborate?</h3>
-                    <p>
-                        I design and deliver robust, transparent HEOR models that inform critical pricing and 
-                        access decisions. By combining deep health economics expertise with advanced analytics 
-                        and software engineering, I accelerate evidence generation and operational efficiency 
-                        for global healthcare partners.
-                    </p>
-                    <a href="mailto:danribes@iies.es?subject=Consulting Inquiry from Website" class="btn btn-primary btn-large">
-                        Send a Message
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Daniel Ribes</h3>
-                    <p>Senior Health Economist</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#expertise">Expertise</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Daniel Ribes. All rights reserved.</p>
-            </div>
+        <div class="wrap footer-inner">
+            <p>&copy; 2026 Daniel Ribes</p>
+            <p><a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a></p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="js/hero3d.js?v=2"></script>
-    <script src="js/script.js"></script>
+    <script src="js/site.js?v=1"></script>
 </body>
 </html>
